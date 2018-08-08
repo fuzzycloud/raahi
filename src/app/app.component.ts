@@ -19,8 +19,14 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'About us',
+      url: '/about',
+      icon: 'list'
     }
   ];
+
 
   constructor(
     private platform: Platform,
