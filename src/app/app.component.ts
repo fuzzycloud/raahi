@@ -29,7 +29,13 @@ export class AppComponent {
       title: 'Press',
       url: '/press',
        icon: 'print'
+    },
+    {
+      title: 'Hotels',
+      url: '/hotels',
+       icon: 'home'
     }
+
     
   ];
 
