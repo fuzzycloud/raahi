@@ -24,6 +24,11 @@ export class AppComponent {
       title: 'Privacy',
       url: '/privacy',
       icon: 'lock'
+    },
+    {
+      title: 'Press',
+      url: '/press',
+       icon: 'press'
     }
     
   ];
