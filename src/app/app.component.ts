@@ -19,7 +19,13 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Privacy',
+      url: '/privacy',
+      icon: 'lock'
     }
+    
   ];
 
   constructor(
