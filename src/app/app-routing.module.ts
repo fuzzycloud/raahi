@@ -9,11 +9,60 @@ const routes: Routes = [
   },
   {
     path: 'home',
+
     loadChildren: './home/home.module#HomePageModule'
   },
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
+  },
+  {
+    path: 'flights',
+    loadChildren: './flights/flights.module#FlightsPageModule'
+  },
+  {
+    path: 'hotels',
+    loadChildren: './hotels/hotels.module#HotelsPageModule'
+  },
+  {
+    path: 'about',
+    loadChildren: './about/about.module#AboutPageModule'
+  },
+  {
+    path: 'press',
+    loadChildren: './press/press.module#PressPageModule'
+  },
+  {
+    path: 'contacts',
+    loadChildren: './contacts/contacts.module#ContactsPageModule'
+  },
+  {
+    path: 'advertise',
+    loadChildren: './advertise/advertise.module#AdvertisePageModule'
+  },
+  {
+    path: 'hoteliers',
+    loadChildren: './hoteliers/hoteliers.module#HoteliersPageModule'
+  },
+  {
+    path: 'privacy',
+    loadChildren: './privacy/privacy.module#PrivacyPageModule'
+  },
+  {
+    path: 'terms',
+    loadChildren: './terms/terms.module#TermsPageModule'
+  },
+  {
+    path: 'airports',
+    loadChildren: './airports/airports.module#AirportsPageModule'
+  },
+  {
+    path: 'airlines',
+    loadChildren: './airlines/airlines.module#AirlinesPageModule'
+  },
+  {
+    path: 'schedules',
+    loadChildren: './schedules/schedules.module#SchedulesPageModule'
   }
 ];
 
@@ -21,4 +70,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
