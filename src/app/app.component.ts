@@ -28,7 +28,7 @@ export class AppComponent {
     {
       title: 'Press',
       url: '/press',
-       icon: 'press'
+       icon: 'print'
     }
     
   ];
