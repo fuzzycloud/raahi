@@ -34,7 +34,13 @@ export class AppComponent {
       title: 'Hotels',
       url: '/hotels',
        icon: 'home'
+    },
+    {
+      title: 'Flights',
+      url: '/flights',
+       icon: 'list'
     }
+
 
     
   ];
