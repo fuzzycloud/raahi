@@ -21,6 +21,7 @@ export class AppComponent {
       icon: 'list'
     },
     {
+
       title: 'Privacy',
       url: '/privacy',
       icon: 'lock'
@@ -28,10 +29,16 @@ export class AppComponent {
     {
       title: 'Press',
       url: '/press',
-       icon: 'print'
+      icon: 'print'
+    },
+    {
+      title: 'About us',
+      url: '/about',
+      icon: 'list'
     }
-    
+
   ];
+
 
   constructor(
     private platform: Platform,
