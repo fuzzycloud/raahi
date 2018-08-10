@@ -21,12 +21,19 @@ export class AppComponent {
       icon: 'list'
     },
     {
+
       title: 'Privacy',
       url: '/privacy',
-      icon: 'lock'
+      icon: 'lock',
+    },
+    {
+      title: 'About us',
+      url: '/about',
+      icon: 'list'
     }
-    
+
   ];
+
 
   constructor(
     private platform: Platform,
