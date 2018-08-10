@@ -43,8 +43,6 @@ export class AppComponent {
       url: '/about',
       icon: 'list'
     }
-
->>>>>>> master
   ];
 
 
