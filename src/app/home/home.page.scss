@@ -1,1 +1,13 @@
+.bg-image{
+    background-image: url(../../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-size: cover;
+    
+}
 
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}

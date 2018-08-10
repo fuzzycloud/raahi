@@ -13,31 +13,18 @@
   <!-- The world is your oyster.
   <p>If you get lost, the
     <a target="_blank" href="https://ionicframework.com/docs">docs</a> will be your guide.</p> -->
-       <!-- <ion-card>
-         <ion-card-title>
-            <ion-text color="secondary">
-                <h1> Welcome to our site</h1>
-              </ion-text>
-         </ion-card-title>
-         <ion-card-content>
-            <ion-chip>
-                <ion-icon name="plane"></ion-icon>
-                <ion-label>Flights</ion-label>
-              </ion-chip>
-              <ion-chip>
-                  <ion-icon name="Hotel"></ion-icon>
-                  <ion-label>Hotel</ion-label>
-                </ion-chip>
-         </ion-card-content>
-       </ion-card> -->
-       <ion-grid>
+
+  <!-- <ion-grid>
           <ion-row>
               <ion-col>
-                  <ion-img width="80" height="80" src="app/assets/icon/favicon.png"></ion-img>
+                <ion-card class="bg-image">
+                  <ion-card-content>
+                      <ion-button>Login</ion-button>
+                  </ion-card-content>
+                </ion-card>
+                  
               </ion-col>
-              <ion-col>
-                <ion-button>Login</ion-button>
-              </ion-col>
+             
           </ion-row>
           <ion-row >
               <ion-button >
@@ -82,4 +69,50 @@
 
          
        </ion-grid>
-</ion-content>
+</ion-content> -->
+
+
+  <ion-card class="bg-image" style="height: 500px">
+    <ion-card-content>
+      <!-- <ion-searchbar animated></ion-searchbar>
+    <ion-button class="top-right">login</ion-button> -->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-searchbar animated></ion-searchbar>
+          </ion-col>
+          <ion-col>
+            <ion-button>login</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button>Hotel</ion-button>
+            <ion-button>Flights</ion-button>
+          </ion-col>
+
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-chip>
+              <ion-label>Round trip</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-label>One Way</ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label>Check in</ion-label>
+              <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+            </ion-item>
+            <ion-item>
+              <ion-label>Check out</ion-label>
+              <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
