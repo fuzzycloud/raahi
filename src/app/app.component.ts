@@ -21,10 +21,17 @@ export class AppComponent {
       icon: 'list'
     },
     {
+
+      title: 'Privacy',
+      url: '/privacy',
+      icon: 'lock',
+    },
+    {
       title: 'About us',
       url: '/about',
       icon: 'list'
     }
+
   ];
 
 
