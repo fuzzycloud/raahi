@@ -26,6 +26,11 @@ export class AppComponent {
        icon: 'home'
     },
     {
+      title: 'Flights',
+      url: '/flights',
+       icon: 'list'
+    },
+    {
 
       title: 'Privacy',
       url: '/privacy',
@@ -35,8 +40,6 @@ export class AppComponent {
       title: 'Press',
       url: '/press',
        icon: 'print'
-    },
-    
     },
     {
       title: 'About us',
