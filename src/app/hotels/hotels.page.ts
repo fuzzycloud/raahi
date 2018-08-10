@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HotelsService } from '../api/hotels.service';
 
 @Component({
   selector: 'app-hotels',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelsPage implements OnInit {
 
-  constructor() { }
+  constructor(private hotelsService:HotelsService) { }
 
   ngOnInit() {
+    console.log(this.hotelsService.GetHotelName());
   }
 
 }
