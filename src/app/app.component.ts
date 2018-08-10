@@ -15,10 +15,20 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
+    // {
+    //   title: 'List',
+    //   url: '/list',
+    //   icon: 'list'
+    // },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Hotels',
+      url: '/hotels',
+       icon: 'home'
+    },
+    {
+      title: 'Flights',
+      url: '/flights',
+       icon: 'list'
     },
     {
 
@@ -29,14 +39,13 @@ export class AppComponent {
     {
       title: 'Press',
       url: '/press',
-      icon: 'print'
+       icon: 'print'
     },
     {
       title: 'About us',
       url: '/about',
       icon: 'list'
     }
-
   ];
 
 
