@@ -5,13 +5,13 @@ import * as _ from 'lodash';
 const fakeData = 20;
 
 export type HotelDTO = {
-  Name : string
-  Image : string
-  Addresscity:string
-  Addressstate:string
-  Addresscountry:string
-  Checkindate:Date
-  Checkoutdate:Date
+  Name: string
+  Image: string
+  AddressCity: string
+  AddressState: string
+  AddressCountry: string
+  CheckInDate: Date
+  CheckOutDate: Date
 }
 
 @Injectable({
@@ -22,20 +22,20 @@ export class HotelsService {
   constructor() { }
 
   GetHotelName() {
-    let hotels : HotelDTO [] = [];
+    let hotels: HotelDTO[] = [];
     for (let i = 0; i < fakeData; i++) {
       hotels.push({
-        Name : faker.company.companyName(),
-        Image : "https://loremflickr.com/640/460/hotel",
-        Checkindate:faker.date.future(),
-        Checkoutdate:faker.date.future(),
-        Addresscity:faker.address.city(),
-       Addressstate:faker.address.state(),
-        Addresscountry:faker.address.country(),
+        Name: faker.company.companyName(),
+        Image: "https://loremflickr.com/640/460/hotel",
+        CheckInDate: faker.date.future(),
+        CheckOutDate: faker.date.future(),
+        AddressCity: faker.address.city(),
+        AddressState: faker.address.state(),
+        AddressCountry: faker.address.country(),
         // Addresszip:faker.address.zipCode()
       })
     }
-    
+
     return hotels;
   }
 
