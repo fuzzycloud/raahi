@@ -6,11 +6,15 @@ import { HotelsService } from '../api/hotels.service';
   templateUrl: './hotels.page.html',
   styleUrls: ['./hotels.page.scss'],
 })
-export class HotelsPage implements OnInit {
 
+
+export class HotelsPage implements OnInit {
+  hotels: HotelDTO[] = [];
+  // hotels: Array<HotelDTO> = [];
   constructor(private hotelsService:HotelsService) { }
 
   ngOnInit() {
+    // hotels = this.hotelsService.GetHotelName()
     console.log(this.hotelsService.GetHotelName());
   }
 
