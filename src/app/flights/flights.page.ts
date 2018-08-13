@@ -20,6 +20,16 @@ export class FlightsPage implements OnInit {
         console.log(err);
       }
     )
+
+    this.flightsService.GetFlights().subscribe(
+      res => {
+        console.log(res);
+      },
+      err => {
+        console.log(err);
+      }
+    )
+
   }
 
 }
