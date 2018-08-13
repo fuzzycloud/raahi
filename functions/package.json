@@ -11,10 +11,14 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
     "firebase-admin": "~5.13.0",
     "firebase-functions": "^2.0.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.0",
     "tslint": "~5.8.0",
     "typescript": "~2.8.3"
   },

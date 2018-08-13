@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as faker from 'faker';
+import { AngularFireFunctions } from 'angularfire2/functions';
 
 const fakeData = 20;
 
@@ -13,8 +14,13 @@ type FlightDTO = {
 })
 export class FlightsService {
 
-  constructor() { }
+  constructor(private fireFunc : AngularFireFunctions) { 
 
+  }
+
+  GetHelloWorld(data) {
+    return this.fireFunc.httpsCallable("helloWorld")(data);
+  }
   GetFlights () {
     let flights : FlightDTO [] = [];
 
