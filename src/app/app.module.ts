@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireStorageModule } from 'angularfire2/storage'
+import { AngularFireFunctionsModule } from 'angularfire2/functions'
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { environment } from '../environments/environment';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFireStorageModule,
+    AngularFireFunctionsModule,
     IonicModule.forRoot(),
     AppRoutingModule
   ],
