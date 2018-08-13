@@ -11,7 +11,15 @@ export class FlightsPage implements OnInit {
   constructor(private flightsService : FlightsService) { }
 
   ngOnInit() {
-    console.log(this.flightsService.GetFlights());
+    // console.log(this.flightsService.GetFlights());
+    this.flightsService.GetHelloWorld("").subscribe(
+      res => {
+        console.log(res);
+      },
+      err => {
+        console.log(err);
+      }
+    )
   }
 
 }
