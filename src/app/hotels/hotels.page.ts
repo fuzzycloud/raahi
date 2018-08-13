@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HotelsService } from '../api/hotels.service';
+import { HotelsService, HotelDTO } from '../api/hotels.service';
 
 @Component({
   selector: 'app-hotels',
@@ -9,13 +9,13 @@ import { HotelsService } from '../api/hotels.service';
 
 
 export class HotelsPage implements OnInit {
-  hotels: HotelDTO[] = [];
+  hotels: HotelDTO [] = [];
   // hotels: Array<HotelDTO> = [];
   constructor(private hotelsService:HotelsService) { }
 
   ngOnInit() {
-    // hotels = this.hotelsService.GetHotelName()
     console.log(this.hotelsService.GetHotelName());
+    this.hotels = this.hotelsService.GetHotelName();
   }
 
 }

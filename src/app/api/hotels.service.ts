@@ -4,7 +4,7 @@ import * as _ from 'lodash';
 
 const fakeData = 20;
 
-type HotelDTO = {
+export type HotelDTO = {
   Name : string
   Image : string
 }
