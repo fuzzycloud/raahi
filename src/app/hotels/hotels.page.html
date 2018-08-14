@@ -8,28 +8,39 @@
 </ion-header>
 
 <ion-content padding>
-  
-    <ion-grid>
-      <ion-row>
-        <ion-col size="3">
-          <ion-row>
-            <ion-button expand="full" color="green">Map View</ion-button>
-          </ion-row>
-          <ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3">
+        <ion-list>
+          <ion-item>
+            <ion-row>
+              <ion-button expand="full" color="green">Map View</ion-button>
+            </ion-row>
+          </ion-item>
+          <ion-item>
+            <ion-row>
               <ion-searchbar></ion-searchbar>
-          </ion-row>
-          <ion-row>
-            <ion-label>Price</ion-label>
-            <ion-select ></ion-select></ion-row>
+            </ion-row>
+          </ion-item>
+          <ion-item>
+            <ion-row>
+              <ion-label>Price</ion-label>
+              <ion-select></ion-select>
+            </ion-row>
+          </ion-item>
+          <ion-item>
             <ion-row>
               <ion-list>
-                <ion-item >
-                  <ion-checkbox  ></ion-checkbox>
+                <ion-item>
+                  <ion-checkbox></ion-checkbox>
                   <ion-label>Today's Deals(0)</ion-label>
-                  <ion-badge color="warning" >new</ion-badge>
+                  <ion-badge color="warning">new</ion-badge>
                 </ion-item>
               </ion-list>
             </ion-row>
+          </ion-item>
+          <ion-item>
             <ion-row>
               <ion-item>
                 <ion-range>
@@ -38,108 +49,134 @@
                 </ion-range>
               </ion-item>
             </ion-row>
+          </ion-item>
+          <ion-item>
             <ion-row>
-              <ion-label>Start rating</ion-label>
+              <ion-label>Start rating :</ion-label>
             </ion-row>
             <ion-row>
-                <ion-button>
-                    <ion-icon slot="icon-only" name="star"></ion-icon>
-                    <ion-icon slot="icon-only" name="star"></ion-icon>
-                    <ion-icon slot="icon-only" name="star"></ion-icon>
-                    <ion-icon slot="icon-only" name="star"></ion-icon>
-                    <ion-icon slot="icon-only" name="star"></ion-icon>
-                  </ion-button>
+              <ion-button>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+              </ion-button>
 
             </ion-row>
+          </ion-item>
+          <ion-item>
             <ion-row>
-                <ion-label>Nightly Average</ion-label>
-                <ion-select >
-                    <ion-select-option value="brown">nightly average</ion-select-option>
-                    <ion-select-option value="blonde">Total stay</ion-select-option>
-                </ion-select>
-              </ion-row>
-             <ion-row>
-               <ion-label>Accomodation Type</ion-label>
-               </ion-row>
-               <ion-row>
+              <ion-label>Nightly Average</ion-label>
+              <ion-select>
+                <ion-select-option value="brown">nightly average</ion-select-option>
+                <ion-select-option value="blonde">Total stay</ion-select-option>
+              </ion-select>
+            </ion-row>
+          </ion-item>
+          <ion-item>
+            <ion-row>
+              <ion-label>Accomodation Type :</ion-label>
+            </ion-row>
+            <ion-row>
               <ion-list>
                 <ion-item>
                   <ion-label>Hotel</ion-label>
-                  <ion-checkbox slot="end" ></ion-checkbox>
+                  <ion-checkbox slot="end"></ion-checkbox>
                 </ion-item>
-              
+
                 <ion-item>
                   <ion-label>resort</ion-label>
-                  <ion-checkbox slot="end" ></ion-checkbox>
+                  <ion-checkbox slot="end"></ion-checkbox>
                 </ion-item>
               </ion-list>
-             </ion-row>
-             <ion-row>
-                <ion-label>Guests' view score</ion-label>
-                </ion-row>
-                <ion-row>
+            </ion-row>
+          </ion-item>
+          <ion-item>
+            <ion-row>
+              <ion-label>Guests' view score</ion-label>
+            </ion-row>
+            <ion-row>
               <ion-item>
-               
+
                 <ion-range>
                   <ion-icon slot="start" size="small" name="sunny"></ion-icon>
                   <ion-icon slot="end" name="sunny"></ion-icon>
                 </ion-range>
               </ion-item>
             </ion-row>
-         
-          
-        </ion-col>
-        <ion-col>
-            <ion-list *ngFor="let hotel of hotels">
-      <ion-card>
-        <ion-row>
-          <ion-col>
-             <ion-img src="{{hotel.Image}}"></ion-img>
-           </ion-col>
-          <ion-col>
-            <ion-row>
-              <h1>{{hotel.Name}}</h1>
-            </ion-row>
-            <ion-row>
-              <h3>Address:</h3>
-           </ion-row>
-           <ion-row>
-              City:
-              <label>{{hotel.Addresscity}}</label>
-            </ion-row>
-            <ion-row>
-              State:
-              <label>{{hotel.Addressstate}}</label>
-            </ion-row>
-            <ion-row>
-              Country:
-              <label>{{hotel.Addresscountry}}</label>
-            </ion-row>
+          </ion-item>
+        </ion-list>
 
-            <ion-row>
-              <h3>CheckIn Date:</h3>
-              <label>{{hotel.Checkindate}}</label>
-            </ion-row>
-            <ion-row>
-              <h3> CheckOut Date:</h3>
-              <label>{{hotel.Checkoutdate}}</label>
-            </ion-row>
-            <ion-row>
-              <ion-button>Show Detail</ion-button>
-            </ion-row>
-          </ion-col>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-card>
+            Here we have to add tabs
+          </ion-card>
         </ion-row>
-      </ion-card>
-    </ion-list>
-    </ion-col>
-    <ion-col size="2">
-      spece for add
-    </ion-col>
+
+        <ion-row *ngFor="let hotel of hotels">
+          <ion-card>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-img src="{{hotel.Image}}"></ion-img>
+                </ion-col>
+                <ion-col>
+                  <h1>{{hotel.Name}}</h1>
+                  <ion-row>
+                      <ion-icon  name="star" color="warning"></ion-icon>
+                      <ion-icon  name="star" color="warning"></ion-icon>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                      make my trip
+                    </ion-col>
+                    <ion-col>
+                      price
+                    </ion-col>
+                  </ion-row>
+                 
+                </ion-col>
+                <ion-col>
+                  <ion-row>
+                    <ion-label>good</ion-label>
+                    <ion-badge  color="warning">7.2</ion-badge>
+                  </ion-row>
+                  <ion-row>
+                    any site url
+                  </ion-row>
+                  <ion-row>
+                    any site url price
+                  </ion-row>
+                  <ion-row>
+                      <ion-button  color="warning">Show Detail</ion-button>
+                    </ion-row>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-tabs>
+                      <ion-tab label="All deals" ></ion-tab>
+                      <ion-tab label="Room Type" ></ion-tab>
+                      <ion-tab label="Review" ></ion-tab>
+                      <ion-tab label="Location" ></ion-tab>
+                    </ion-tabs>
+                    
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-row>
+
+      </ion-col>
+      <ion-col size="2">
+        spece for add
+      </ion-col>
     </ion-row>
 
 
-    </ion-grid>
-  
+  </ion-grid>
+
   <!-- <ion-item *ngFor="let hotel of hotels">
     <h2>{{hotel.Name}}</h2>
   </ion-item>-->
