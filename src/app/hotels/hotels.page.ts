@@ -9,7 +9,7 @@ import { HotelsService, HotelDTO } from '../api/hotels.service';
 
 
 export class HotelsPage implements OnInit {
-  hotels: HotelDTO [] = [];
+  public hotels: HotelDTO [] = [];
   // hotels: Array<HotelDTO> = [];
   constructor(private hotelsService:HotelsService) { }
 

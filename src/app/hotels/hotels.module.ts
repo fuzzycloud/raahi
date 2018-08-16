@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { HotelsPage } from './hotels.page';
 import { TestComponent } from './test/test.component';
+import { HeadertagComponent } from './headertag/headertag.component';
+import { CardComponent } from './card/card.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [HotelsPage, TestComponent]
+  declarations: [HotelsPage, TestComponent, HeadertagComponent, CardComponent]
 })
 export class HotelsPageModule {}
