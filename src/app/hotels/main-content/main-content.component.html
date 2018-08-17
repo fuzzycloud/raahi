@@ -1,0 +1,73 @@
+<ion-row>
+  here we have to add tab
+  <!-- <ion-tabs>
+        <ion-tab label="All deals"></ion-tab>
+        <ion-tab label="Room Type"></ion-tab>
+        <ion-tab label="Review"></ion-tab>
+        <ion-tab label="Location"></ion-tab>
+      </ion-tabs> -->
+</ion-row>
+
+<ion-row *ngFor="let hotel of hotels">
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-img src="{{hotel.Image}}"></ion-img>
+        </ion-col>
+        <ion-col>
+          <h1>{{hotel.Name}}</h1>
+          <ion-row>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              make my trip
+            </ion-col>
+            <ion-col>
+              Rs. {{hotel.RandomPrice}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              cleartrip
+            </ion-col>
+            <ion-col>
+              Rs. {{hotel.RandomPrice}}
+            </ion-col>
+          </ion-row>
+
+        </ion-col>
+        <ion-col size="2">
+          <ion-row>
+            <!-- <ion-label>good</ion-label> -->
+            Good
+            <ion-badge color={{hotel.RandomColor}} slot="end"> 7.2</ion-badge>
+          </ion-row>
+          <ion-row>
+            Review {{hotel.RandomNumber}}
+          </ion-row>
+          <ion-row>
+            Booking.com
+          </ion-row>
+          <ion-row>
+            Rs. {{hotel.RandomPrice}}
+          </ion-row>
+          <ion-row>
+            <ion-button color="warning">Show Detail</ion-button>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-tabs>
+          <ion-tab label="All deals"></ion-tab>
+          <ion-tab label="Room Type"></ion-tab>
+          <ion-tab label="Review"></ion-tab>
+          <ion-tab label="Location"></ion-tab>
+        </ion-tabs>
+
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-row>
