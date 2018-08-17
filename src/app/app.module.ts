@@ -15,10 +15,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireStorageModule } from 'angularfire2/storage'
 import { AngularFireFunctionsModule } from 'angularfire2/functions'
 import { environment } from '../environments/environment';
-import { CardComponent } from './hetels/card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, CardComponent],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,

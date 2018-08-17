@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HotelsService, HotelDTO } from '../../api/hotels.service';
-import { Input } from '@ionic/angular';
 
 @Component({
   selector: 'app-card',
