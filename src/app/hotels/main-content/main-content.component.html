@@ -1,11 +1,24 @@
 <ion-row>
-  here we have to add tab
-  <!-- <ion-tabs>
-        <ion-tab label="All deals"></ion-tab>
-        <ion-tab label="Room Type"></ion-tab>
-        <ion-tab label="Review"></ion-tab>
-        <ion-tab label="Location"></ion-tab>
-      </ion-tabs> -->
+  
+  <ion-card>
+      <ion-segment>
+          <ion-segment-button  checked>
+            Recommended
+          </ion-segment-button>
+          <ion-segment-button >
+            Price
+          </ion-segment-button>
+          <ion-segment-button >
+              Guest Rating
+            </ion-segment-button>
+            <ion-segment-button >
+                Distance
+              </ion-segment-button>
+              <ion-segment-button >
+                  Stars
+                </ion-segment-button>
+        </ion-segment> 
+  </ion-card>
 </ion-row>
 
 <ion-row *ngFor="let hotel of hotels">

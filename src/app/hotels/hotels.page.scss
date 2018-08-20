@@ -1,8 +1,8 @@
-// ion-avatar,
-// ion-avatar > img{
-//     // border-radius:70%;
-//     // height:12rem;
-//     // width:12rem;
-//     height:200px;
-//     width: 200px;
-// }
+.bg-image{
+    background-image: url(../../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-size: cover;
+    width: 100%;
+    
+}
