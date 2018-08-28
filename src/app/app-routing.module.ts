@@ -63,7 +63,8 @@ const routes: Routes = [
   {
     path: 'schedules',
     loadChildren: './schedules/schedules.module#SchedulesPageModule'
-  }
+  },  { path: 'HotelSearch', loadChildren: './hotel-search/hotel-search.module#HotelSearchPageModule' }
+
 ];
 
 @NgModule({

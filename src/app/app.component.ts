@@ -30,7 +30,7 @@ export class AppComponent {
       url: '/press',
        icon: 'print'
     }
-    
+   
   ];
 
   constructor(
