@@ -1,49 +1,25 @@
-<ion-grid class="bg-image">
-<ion-header >
-  <ion-row>
-  <ion-toolbar color="#f5f6f9" >
+<ion-header>
+  <ion-toolbar color="#f5f6f9">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Hotels</ion-title>
   </ion-toolbar>
-</ion-row>
-<ion-row>
-    <!-- <ion-searchbar> -->
-        <ion-segment>
-            <ion-segment-button  checked>
-              location
-            </ion-segment-button>
-            <ion-segment-button >
-            checkin Date
-            </ion-segment-button>
-            <ion-segment-button >
-                checkout Date
-              </ion-segment-button>
-              <ion-segment-button >
-                  Guests And Room
-                </ion-segment-button>
-                <ion-segment-button >
-                    <ion-icon  name="search"></ion-icon>
-                  </ion-segment-button>
-          </ion-segment> 
-    <!-- </ion-searchbar> -->
-</ion-row>
 </ion-header>
-</ion-grid>
+
 <ion-content padding>
 
-  <ion-grid  >
+  <ion-grid>
     <ion-row>
-      <ion-col size="3">
+      <!-- <ion-col size="3">
         <app-manu></app-manu>
-      </ion-col>
+      </ion-col> -->
       <ion-col>
         <app-main-content></app-main-content>
       </ion-col>
-      <ion-col size="2">
+      <!-- <ion-col size="2">
         spece for add
-      </ion-col>
+      </ion-col> -->
     </ion-row>
   </ion-grid>
 

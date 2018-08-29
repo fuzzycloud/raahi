@@ -1,5 +1,6 @@
-<ion-row>
-  
+<!-- Commented section is for web view -->
+
+<!-- <ion-row>
   <ion-card>
       <ion-segment>
           <ion-segment-button  checked>
@@ -20,7 +21,6 @@
         </ion-segment> 
   </ion-card>
 </ion-row>
-
 <ion-row *ngFor="let hotel of hotels">
   <ion-card>
     <ion-grid>
@@ -54,7 +54,7 @@
         </ion-col>
         <ion-col size="2">
           <ion-row>
-            <!-- <ion-label>good</ion-label> -->
+           
             Good
             <ion-badge color={{hotel.RandomColor}} slot="end"> 7.2</ion-badge>
           </ion-row>
@@ -83,4 +83,35 @@
       </ion-row>
     </ion-grid>
   </ion-card>
+</ion-row> -->
+<ion-row>
+  <ion-searchbar></ion-searchbar>
+</ion-row>
+<ion-row *ngFor="let hotel of hotels">
+  <ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-img src="{{hotel.Image}}"></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          {{hotel.Name}}
+        </ion-row>
+        <ion-row>
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star" color="warning"></ion-icon>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            Good
+            <ion-badge color={{hotel.RandomColor}} slot="end"> 7.2</ion-badge>
+          </ion-col>
+          <ion-col>
+            Rs. {{hotel.RandomPrice}}
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
 </ion-row>
