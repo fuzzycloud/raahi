@@ -15,12 +15,23 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
+    // {
+    //   title: 'List',
+    //   url: '/list',
+    //   icon: 'list'
+    // },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Hotels',
+      url: '/hotels',
+       icon: 'home'
     },
     {
+      title: 'Flights',
+      url: '/flights',
+       icon: 'list'
+    },
+    {
+
       title: 'Privacy',
       url: '/privacy',
       icon: 'lock'
@@ -29,9 +40,14 @@ export class AppComponent {
       title: 'Press',
       url: '/press',
        icon: 'print'
+    },
+    {
+      title: 'About us',
+      url: '/about',
+      icon: 'list'
     }
-   
   ];
+
 
   constructor(
     private platform: Platform,
