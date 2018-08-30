@@ -63,7 +63,8 @@ const routes: Routes = [
   {
     path: 'schedules',
     loadChildren: './schedules/schedules.module#SchedulesPageModule'
-  },  { path: 'HotelFilter', loadChildren: './hotel-filter/hotel-filter.module#HotelFilterPageModule' }
+  },  { path: 'HotelFilter', loadChildren: './hotel-filter/hotel-filter.module#HotelFilterPageModule' },
+  { path: 'HotelSort', loadChildren: './hotel-sort/hotel-sort.module#HotelSortPageModule' }
 
 ];
 
