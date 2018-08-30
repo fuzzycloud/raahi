@@ -1,82 +1,30 @@
 <ion-header>
-  <ion-toolbar>
-      <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
+  <ion-toolbar color="#f5f6f9">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Hotels</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <ion-card>
-    <ion-item>
-      
-        <ion-img src="../../assets/img/bg.jpg" slot="start"></ion-img>
-      
-      <ion-label>
-        <h2>Hotel Title</h2>
-        <h3>Star</h3>
-        <p>Avaibility</p>
-      </ion-label>
-      <ion-chip slot="end" color="primary">Book now</ion-chip>
-    </ion-item>
-  </ion-card>
 
-  <ion-card>
-      <ion-item>
-        
-          <ion-img src="../../assets/img/bg.jpg" slot="start"></ion-img>
-        
-        <ion-label>
-          <h2>Hotel Title</h2>
-          <h3>Star</h3>
-          <p>Avaibility</p>
-        </ion-label>
-        <ion-chip slot="end" color="primary">Book now</ion-chip>
-      </ion-item>
-    </ion-card>
+  <ion-grid>
+    <ion-row>
+      <!-- <ion-col size="3">
+        <app-manu></app-manu>
+      </ion-col> -->
+      <ion-col>
+        <app-main-content></app-main-content>
+      </ion-col>
+      <!-- <ion-col size="2">
+        spece for add
+      </ion-col> -->
+    </ion-row>
+  </ion-grid>
 
-    <ion-card>
-        <ion-item>
-          
-            <ion-img src="../../assets/img/bg.jpg" slot="start"></ion-img>
-          
-          <ion-label>
-            <h2>Hotel Title</h2>
-            <h3>Star</h3>
-            <p>Avaibility</p>
-          </ion-label>
-          <ion-chip slot="end" color="primary">Book now</ion-chip>
-        </ion-item>
-      </ion-card>
+  <!-- <ion-item *ngFor="let hotel of hotels">
+    <h2>{{hotel.Name}}</h2>
+  </ion-item>-->
 
-      <ion-card>
-          <ion-item>
-            
-              <ion-img src="../../assets/img/bg.jpg" slot="start" s></ion-img>
-            
-            <ion-label>
-              <h2>Hotel Title</h2>
-              <h3>Star</h3>
-              <p>Avaibility</p>
-            </ion-label>
-            <ion-chip slot="end" color="primary">Book now</ion-chip>
-          </ion-item>
-        </ion-card>
-
-        <ion-card>
-            <ion-item>
-              
-                <ion-img src="../../assets/img/bg.jpg" slot="start"></ion-img>
-              
-              <ion-label>
-                <h2>Hotel Title</h2>
-                <h3>Star</h3>
-                <p>Avaibility</p>
-              </ion-label>
-              <ion-chip slot="end" color="primary">Book now</ion-chip>
-            </ion-item>
-          </ion-card>
-  </ion-list>
 </ion-content>

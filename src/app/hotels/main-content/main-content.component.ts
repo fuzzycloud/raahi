@@ -1,21 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { HotelsService, HotelDTO } from '../api/hotels.service';
+import { HotelsService, HotelDTO } from '../../api/hotels.service';
 
 @Component({
-  selector: 'app-hotels',
-  templateUrl: './hotels.page.html',
-  styleUrls: ['./hotels.page.scss'],
+  selector: 'app-main-content',
+  templateUrl: './main-content.component.html',
+  styleUrls: ['./main-content.component.scss']
 })
-
-
-export class HotelsPage implements OnInit {
+export class MainContentComponent implements OnInit {
   hotels: HotelDTO [] = [];
-  // hotels: Array<HotelDTO> = [];
   constructor(private hotelsService:HotelsService) { }
 
   ngOnInit() {
     console.log(this.hotelsService.GetHotelName());
     this.hotels = this.hotelsService.GetHotelName();
   }
-
+ 
 }
