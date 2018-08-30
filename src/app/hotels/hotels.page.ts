@@ -11,7 +11,7 @@ import { HotelsService, HotelDTO } from '../api/hotels.service';
 export class HotelsPage implements OnInit {
   hotels: HotelDTO [] = [];
   // hotels: Array<HotelDTO> = [];
-  constructor(private hotelsService:HotelsService) { }
+  constructor(private hotelsService: HotelsService) { }
 
   ngOnInit() {
     console.log(this.hotelsService.GetHotelName());
