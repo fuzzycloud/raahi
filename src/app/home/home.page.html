@@ -3,23 +3,51 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
+
     <ion-title>
       Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <!-- The world is your oyster.
-  <p>If you get lost, the
-    <a target="_blank" href="https://ionicframework.com/docs">docs</a> will be your guide.</p> -->
 
-  
+<ion-content padding class="bg-image">
+  <ion-grid   >
+    <ion-row   >
+      <ion-col >
+        <ion-text color="light" align-self-center>
+          <h1>Raahi </h1>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row  >
+      <ion-col >
 
-  <ion-card class="bg-image" style="height: 500px">
+        <ion-text color="light">
+          <h3>Search all travel deals in one go </h3>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" color="light" routerLink="/HotelSearch">Hotels
+          <ion-icon  name="home"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" color="light">Flights
+          <ion-icon  name="plane"></ion-icon>
+
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  </ion-content>
+
+  <!-- <ion-card class="bg-image" style="height: 500px">
     <ion-card-content>
-      <!-- <ion-searchbar animated></ion-searchbar>
-    <ion-button class="top-right">login</ion-button> -->
+
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -59,4 +87,4 @@
         </ion-row>
       </ion-grid>
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
