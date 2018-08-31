@@ -12,9 +12,9 @@ export type HotelDTO = {
   AddressCountry: string
   CheckInDate: Date
   CheckOutDate: Date
-  RandomNumber:Number
-  RandomColor:string
-  RandomPrice:string
+  RandomNumber: Number
+  RandomColor: string
+  RandomPrice: string
 }
 
 @Injectable({
@@ -36,9 +36,9 @@ export class HotelsService {
         AddressState: faker.address.state(),
         AddressCountry: faker.address.country(),
         // Addresszip:faker.address.zipCode()
-        RandomNumber:faker.random.number(),
-        RandomColor:faker.commerce.color(),
-        RandomPrice:faker.commerce.price(),
+        RandomNumber: faker.random.number(),
+        RandomColor: faker.commerce.color(),
+        RandomPrice: faker.commerce.price(),
       })
     }
 
