@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FlightsService } from '../api/flights.service';
+import { FlightsService, FlightDTO } from '../api/flights.service';
 
 @Component({
   selector: 'app-flights',
@@ -7,29 +7,30 @@ import { FlightsService } from '../api/flights.service';
   styleUrls: ['./flights.page.scss'],
 })
 export class FlightsPage implements OnInit {
-
-  constructor(private flightsService : FlightsService) { }
+  flights: FlightDTO [] = [];
+  constructor(private flightsService: FlightsService) { }
 
   ngOnInit() {
-    // console.log(this.flightsService.GetFlights());
-    this.flightsService.GetHelloWorld("").subscribe(
+    console.log(this.flightsService.GetFlights());
+    this.flightsService.GetHelloWorld('').subscribe(
       res => {
         console.log(res);
       },
       err => {
         console.log(err);
       }
-    )
+    ),
 
-    this.flightsService.GetFlights().subscribe(
-      res => {
-        console.log(res);
-      },
-      err => {
-        console.log(err);
-      }
-    )
-
+    // this.flightsService.GetFlights().subscribe(
+    //   res => {
+    //     console.log(res);
+    //   },
+    //   err => {
+    //     console.log(err);
+    //   }
+    // );
+    //  }
+    console.log(this.flightsService.GetFlights());
+    this.flights = this.flightsService.GetFlights();
   }
-
 }

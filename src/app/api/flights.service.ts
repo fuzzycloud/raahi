@@ -6,10 +6,11 @@ import { Observable, from, of, range } from 'rxjs';
 
 const fakeData = 20;
 
-type FlightDTO = {
+export type FlightDTO = {
   Name: string
   Image: string
-}
+  City: string
+};
 
 @Injectable({
   providedIn: 'root'
@@ -31,9 +32,10 @@ export class FlightsService {
       flights.push({
         Name: faker.company.companyName(),
         Image: "https://loremflickr.com/640/460/boing"
-      })
+        City : faker.address.city(),
+      });
     }
 
-    return from(flights);
+    return flights;
   }
 }

@@ -1,12 +1,60 @@
 <ion-header>
-  <ion-toolbar>
-      <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Flights</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-Welcome to Flights page
+  <ion-grid>
+
+    <ion-row style="height: 30px">
+      <ion-tabs tabbar-placement="top" color="success">
+        <ion-tab label="SORT" icon="swap" href="">
+
+        </ion-tab>
+        <ion-tab label="FILTER" icon="md-funnel" href="">
+          <!-- <ion-router-outlet stack name="speakers"></ion-router-outlet> -->
+        </ion-tab>
+        <ion-tab label="ALERTS" icon="alert" href="/app/tabs/(map:map)">
+          <ion-router-outlet stack name="map"></ion-router-outlet>
+        </ion-tab>
+
+      </ion-tabs>
+    </ion-row>
+    <ion-card *ngFor="let flight of flights">
+    <ion-row >
+      <ion-col>
+        <ion-item>
+          <ion-row>
+            <ion-col size="2">
+              <!-- <ion-avatar slot="start"> -->
+                <ion-img src="{{flight.Image}}"></ion-img>
+              <!-- </ion-avatar> -->
+            </ion-col>
+            <ion-col>
+              <ion-row>
+                <ion-label> {{flight.Name}}</ion-label>
+              </ion-row>
+              <ion-row>
+                <ion-label>{{flight.City}} to {{flight.City}}</ion-label>
+              </ion-row>
+              <ion-row>
+                <ion-label>Departure Time: </ion-label>
+              </ion-row>
+              <ion-row>
+                <ion-label>Arrival Time: </ion-label>
+              </ion-row>
+              <ion-row>
+                <ion-label>Journey Hours: </ion-label>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  </ion-grid>
 </ion-content>

@@ -69,7 +69,17 @@ const routes: Routes = [
   },
   { path: 'HotelSort',
     loadChildren: './hotel-sort/hotel-sort.module#HotelSortPageModule'
+  },
+  { path: 'HotelDetail',
+  loadChildren: './hotel-detail/hotel-detail.module#HotelDetailPageModule'
+ },
+  { path: 'FlightSearch',
+   loadChildren: './flight-search/flight-search.module#FlightSearchPageModule'
+  },
+  { path: 'HotelSearch',
+  loadChildren: './hotel-search/hotel-search.module#hotelSearchPageModule'
   }
+
 
 ];
 

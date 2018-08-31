@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HotelsService, HotelDTO } from '../api/hotels.service';
-import { PopoverController } from '@ionic/angular';
 
 
 
@@ -16,7 +15,7 @@ export class HotelsPage implements OnInit {
   hotels: HotelDTO [] = [];
   // hotels: Array<HotelDTO> = [];
   constructor(private hotelsService: HotelsService,
-    public popoverController: PopoverController) { }
+    ) { }
 
   ngOnInit() {
     console.log(this.hotelsService.GetHotelName());

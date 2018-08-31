@@ -1,0 +1,94 @@
+<ion-header>
+    <ion-toolbar color="success">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Flights Search</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+        <ion-row style="height: 50px" color="success">
+            <ion-col>
+                <ion-chip>
+                    <ion-label>One Way</ion-label>
+                </ion-chip>
+            </ion-col>
+            <ion-col>
+                <ion-chip>
+                    <ion-label>Round Trip</ion-label>
+                </ion-chip>
+            </ion-col>
+            <ion-col>
+                <ion-chip>
+                    <ion-label>Multicity/Stopover</ion-label>
+                </ion-chip>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+
+            <ion-item  lines="inset">
+                <ion-row>
+                        <ion-icon name="plane"></ion-icon>
+                    <ion-label> Departure</ion-label>
+                 </ion-row>
+                </ion-item>
+                <ion-item  lines="inset">
+                 <ion-row>
+                        <ion-icon name="plane"></ion-icon>
+                    <ion-label> Destination</ion-label>
+                </ion-row>
+                </ion-item>
+                 <ion-row lines="inset">
+                    <ion-item lines="inset">
+                    <ion-col size="2">
+                      <ion-icon name="calendar"></ion-icon>
+                    </ion-col>
+                    <ion-col>
+                      Select Date
+                    </ion-col>
+                  </ion-item>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col lines="inset">
+                        <ion-item>
+                            <ion-label>Departure Date</ion-label>
+                            <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+                          </ion-item>
+                    </ion-col>
+                    <ion-col lines="inset">
+                        <ion-item>
+                            <ion-label>Return Date</ion-label>
+                            <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+                          </ion-item>
+                      </ion-col>
+                  </ion-row>
+            
+            <ion-row>
+                    <ion-col lines="inset">
+                        <ion-item>
+                            <ion-label>Passengers</ion-label>
+                            
+                          </ion-item>
+                    </ion-col>
+                    <ion-col lines="inset">
+                        <ion-item>
+                            <ion-label>Cabin class</ion-label>
+                           
+                          </ion-item>
+                      </ion-col>
+                      <ion-col lines="inset">
+                            <ion-item>
+                                <ion-label>Payment Type</ion-label>
+                               
+                              </ion-item>
+                          </ion-col>
+                  </ion-row>
+          
+        </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-footer>
+    <ion-button expand="full" color="warning">Search Flights</ion-button>
+</ion-footer>
