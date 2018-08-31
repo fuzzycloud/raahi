@@ -65,9 +65,11 @@ const routes: Routes = [
     loadChildren: './schedules/schedules.module#SchedulesPageModule'
   },
   { path: 'HotelFilter',
-    loadChildren: './hotel-filter/hotel-filter.module#HotelFilterPageModule' },
-  { path: 'HotelSearch',
-    loadChildren: './hotel-search/hotel-search.module#HotelSearchPageModule' }
+    loadChildren: './hotel-filter/hotel-filter.module#HotelFilterPageModule'
+  },
+  { path: 'HotelSort',
+    loadChildren: './hotel-sort/hotel-sort.module#HotelSortPageModule'
+  }
 
 ];
 

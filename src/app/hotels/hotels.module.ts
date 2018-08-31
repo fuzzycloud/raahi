@@ -21,6 +21,7 @@ import { HotelChainsAndBrandsComponent } from './manu/hotel-chains-and-brands/ho
 import { FreeAmenitiesComponent } from './manu/free-amenities/free-amenities.component';
 import { HotelAmenitiesComponent } from './manu/hotel-amenities/hotel-amenities.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -35,6 +36,16 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [HotelsPage, ManuComponent, MainContentComponent, MapViewComponent, HotelSearchComponent, PriceComponent, StarRatingComponent, AccomodationTypeComponent, GuestsReviewscoreComponent, HighlyRatedByGuestsComponent, DistrictsAndAreasComponent, HotelChainsAndBrandsComponent, FreeAmenitiesComponent, HotelAmenitiesComponent]
+  declarations: [HotelsPage,
+    ManuComponent,
+    MainContentComponent,
+    MapViewComponent,
+    HotelSearchComponent,
+    PriceComponent,
+    StarRatingComponent,
+    AccomodationTypeComponent,
+    GuestsReviewscoreComponent,
+    HighlyRatedByGuestsComponent, DistrictsAndAreasComponent,
+    HotelChainsAndBrandsComponent, FreeAmenitiesComponent, HotelAmenitiesComponent]
 })
-export class HotelsPageModule {}
+export class HotelsPageModule { }
