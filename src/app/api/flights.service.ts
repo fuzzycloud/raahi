@@ -6,11 +6,11 @@ import { Observable, from, of, range } from 'rxjs';
 
 const fakeData = 20;
 
-export type FlightDTO = {
-  Name: string
-  Image: string
-  City: string
-};
+export interface FlightDTO {
+  Name: string;
+  Image: string;
+  City: string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -22,16 +22,16 @@ export class FlightsService {
   }
 
   GetHelloWorld(data) {
-    return this.fireFunc.httpsCallable("helloWorld")(data);
+    return this.fireFunc.httpsCallable('helloWorld')(data);
   }
 
   GetFlights() {
-    let flights: FlightDTO[] = [];
+    const flights: FlightDTO[] = [];
 
     for (let i = 0; i < fakeData; i++) {
       flights.push({
         Name: faker.company.companyName(),
-        Image: "https://loremflickr.com/640/460/boing"
+        Image: 'https://loremflickr.com/640/460/boing',
         City : faker.address.city(),
       });
     }

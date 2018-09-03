@@ -64,20 +64,25 @@ const routes: Routes = [
     path: 'schedules',
     loadChildren: './schedules/schedules.module#SchedulesPageModule'
   },
-  { path: 'HotelFilter',
+  {
+    path: 'HotelFilter',
     loadChildren: './hotel-filter/hotel-filter.module#HotelFilterPageModule'
   },
-  { path: 'HotelSort',
+  {
+    path: 'HotelSort',
     loadChildren: './hotel-sort/hotel-sort.module#HotelSortPageModule'
   },
-  { path: 'HotelDetail',
-  loadChildren: './hotel-detail/hotel-detail.module#HotelDetailPageModule'
- },
-  { path: 'FlightSearch',
-   loadChildren: './flight-search/flight-search.module#FlightSearchPageModule'
+  {
+    path: 'HotelDetail',
+    loadChildren: './hotel-detail/hotel-detail.module#HotelDetailPageModule'
   },
-  { path: 'HotelSearch',
-  loadChildren: './hotel-search/hotel-search.module#hotelSearchPageModule'
+  {
+    path: 'FlightSearch',
+    loadChildren: './flight-search/flight-search.module#FlightSearchPageModule'
+  },
+  {
+    path: 'HotelSearch',
+    loadChildren: './hotel-search/hotel-search.module#hotelSearchPageModule'
   }
 
 
