@@ -10,6 +10,8 @@ export interface FlightDTO {
   Name: string;
   Image: string;
   City: string;
+  RandomPrice: string;
+  RandomNumber: Number;
 }
 
 @Injectable({
@@ -33,6 +35,8 @@ export class FlightsService {
         Name: faker.company.companyName(),
         Image: 'https://loremflickr.com/640/460/boing',
         City : faker.address.city(),
+        RandomNumber: faker.random.number(),
+        RandomPrice: faker.commerce.price(),
       });
     }
 

@@ -39,7 +39,7 @@ export class HotelsService {
         RandomNumber: faker.random.number(),
         RandomColor: faker.commerce.color(),
         RandomPrice: faker.commerce.price(),
-      })
+      });
     }
 
     return hotels;

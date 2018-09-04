@@ -79,7 +79,8 @@ const routes: Routes = [
   {
     path: 'FlightSearch',
     loadChildren: './flight-search/flight-search.module#FlightSearchPageModule'
-  },  { path: 'HotelSearch', loadChildren: './hotel-search/hotel-search.module#HotelSearchPageModule' }
+  },  { path: 'HotelSearch', loadChildren: './hotel-search/hotel-search.module#HotelSearchPageModule' },
+  { path: 'FlightSort', loadChildren: './flight-sort/flight-sort.module#FlightSortPageModule' }
 
 
 
