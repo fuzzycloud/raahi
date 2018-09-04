@@ -88,7 +88,7 @@
   <ion-searchbar placeholder="Search by Hotel Name"></ion-searchbar>
 </ion-row>
 <ion-row *ngFor="let hotel of hotels">
-  <ion-item >
+  <ion-item lines="none">
     <ion-row>
       <ion-col>
         <ion-img src="{{hotel.Image}}"></ion-img>
@@ -110,8 +110,16 @@
             Rs. {{hotel.RandomPrice}}
           </ion-col>
         </ion-row>
+        <ion-row>
+          <ion-col>
+        <ion-button color="warning" href="/HotelDetail" expand="full">Hotel Detail</ion-button>
+      </ion-col>
+      </ion-row>
       </ion-col>
     </ion-row>
   </ion-item>
+  <!-- <ion-item lines="none"> -->
+   
+  <!-- </ion-item> -->
 
 </ion-row>

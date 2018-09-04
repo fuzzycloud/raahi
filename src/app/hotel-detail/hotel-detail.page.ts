@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HotelsService, HotelDTO } from '../api/hotels.service';
 
 @Component({
   selector: 'app-hotel-detail',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hotel-detail.page.scss'],
 })
 export class HotelDetailPage implements OnInit {
-
-  constructor() { }
+  hotels: HotelDTO [] = [];
+  constructor(private hotelsService: HotelsService) { }
 
   ngOnInit() {
+    console.log(this.hotelsService.GetHotelName());
+    this.hotels = this.hotelsService.GetHotelName();
+
   }
 
 }
