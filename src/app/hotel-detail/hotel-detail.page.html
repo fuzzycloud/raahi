@@ -1,9 +1,103 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="success">
+      <ion-buttons slot="start">
+          <!-- <ion-menu-button></ion-menu-button> -->
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
     <ion-title>HotelDetail</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <!-- <ion-img src="{{hotels.Image}}"></ion-img>
+        {{hotels.Name}} -->
+        <ion-img src="../../assets/img/bg.jpg"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row style="height: 30px" >
+      <ion-col>
+        <ion-tabs color="success" tabbar-placement="top">
+          <ion-tab label="DEALS" href="">
+            
+          </ion-tab>
+          <ion-tab label="ROOM TYPES"  href="">
+            
+          </ion-tab>
+          <ion-tab label="REVIEWS"  href="">
+
+          </ion-tab>
+          <ion-tab label="DESCRIPTION"  href="">
+            
+          </ion-tab>
+        </ion-tabs>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <ion-segment color="success" scroll-events="true">
+              
+              <ion-segment-button >
+                Free Cancellation
+              </ion-segment-button>
+              <ion-segment-button >
+                  Free Parking
+                </ion-segment-button>
+                <ion-segment-button >
+                    Free WiFi
+                  </ion-segment-button>
+                   
+            </ion-segment>
+            </ion-col>
+</ion-row>
+<ion-row>
+  <ion-item>
+    <ion-row>
+      <ion-col size="10">
+       <ion-label color="primary"> Trip.com</ion-label>
+       
+        </ion-col>
+        <ion-col col="8">
+          Rs.2000
+        </ion-col>
+        <ion-col >
+          <ion-button>Go</ion-button>
+          </ion-col>
+    </ion-row>
+  </ion-item>
+</ion-row>
+<ion-row>
+  <ion-item>
+    <ion-row>
+      <ion-col size="10">
+       <ion-label color="primary"> Booking.com</ion-label>
+         </ion-col>
+        <ion-col col="8">
+          Rs.3000
+        </ion-col>
+        <ion-col >
+          <ion-button>Go</ion-button>
+          </ion-col>
+    </ion-row>
+  </ion-item>
+</ion-row>
+<ion-row>
+  <ion-item>
+    <ion-row>
+      <ion-col size="10">
+       <ion-label color="primary"> ClearTrip.com</ion-label>
+         </ion-col>
+        <ion-col col="8">
+          Rs.3000
+        </ion-col>
+        <ion-col >
+          <ion-button>Go</ion-button>
+          </ion-col>
+    </ion-row>
+  </ion-item>
+</ion-row>
+  </ion-grid>
 
 </ion-content>

@@ -15,7 +15,7 @@ export type HotelDTO = {
   RandomNumber: Number
   RandomColor: string
   RandomPrice: string
-}
+};
 
 @Injectable({
   providedIn: 'root'
