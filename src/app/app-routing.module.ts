@@ -81,7 +81,8 @@ const routes: Routes = [
     loadChildren: './flight-search/flight-search.module#FlightSearchPageModule'
   },  { path: 'HotelSearch', loadChildren: './hotel-search/hotel-search.module#HotelSearchPageModule' },
   { path: 'FlightSort', loadChildren: './flight-sort/flight-sort.module#FlightSortPageModule' },
-  { path: 'FlightFilter', loadChildren: './flight-filter/flight-filter.module#FlightFilterPageModule' }
+  { path: 'FlightFilter', loadChildren: './flight-filter/flight-filter.module#FlightFilterPageModule' },
+  { path: 'FlightDetail', loadChildren: './flight-detail/flight-detail.module#FlightDetailPageModule' }
 
 
 
