@@ -22,12 +22,12 @@ export class AppComponent {
     // },
     {
       title: 'Hotels',
-      url: '/hotels',
+      url: '/HotelSearch',
        icon: 'home'
     },
     {
       title: 'Flights',
-      url: '/flights',
+      url: '/FlightSearch',
        icon: 'list'
     },
     {
