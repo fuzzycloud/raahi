@@ -7,7 +7,10 @@ we did create quite a good amount of screens covering every aspect of applicatio
 Ionic V4 https://beta.ionicframework.com/docs/
 
 #Installation
+
 -Clone or download project
--npm install
+
+npm install
+
 -for run “ionic cordova run android” or “ionic cordova run ios”
 
