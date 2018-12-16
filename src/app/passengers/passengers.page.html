@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <!-- <ion-menu-button></ion-menu-button> -->
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Passengers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+   
+    <ion-item>
+      <ion-label>
+        <h4>Adult</h4>
+        <h6>(>12 years)</h6>
+      </ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select">
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+        <ion-select-option value="5">5</ion-select-option>
+        <ion-select-option value="6">6</ion-select-option>
+        <ion-select-option value="7">7</ion-select-option>
+        <ion-select-option value="8">8</ion-select-option>
+        <ion-select-option value="9">9</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h4>Child</h4>
+        <h6>(2-12 years)</h6>
+      </ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select">
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+        <ion-select-option value="5">5</ion-select-option>
+        <ion-select-option value="6">6</ion-select-option>
+        <ion-select-option value="7">7</ion-select-option>
+        <ion-select-option value="8">8</ion-select-option>
+        <ion-select-option value="9">9</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h4>Infant</h4>
+        <h6>( <2 years)</h6>
+      </ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select">
+        <ion-select-option value="0">0</ion-select-option>
+        <ion-select-option value="1">1</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-grid>
+
+</ion-content>
