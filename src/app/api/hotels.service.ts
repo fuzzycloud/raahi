@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as faker from 'faker';
 import * as _ from 'lodash';
-
+import { Storage } from '@ionic/storage';
 const fakeData = 20;
 
 export type HotelDTO = {
@@ -21,8 +21,8 @@ export type HotelDTO = {
   providedIn: 'root'
 })
 export class HotelsService {
-
-  constructor() { }
+key = '';
+  constructor(private storage: Storage) { }
 
   GetHotelName() {
     let hotels: HotelDTO[] = [];
@@ -43,6 +43,19 @@ export class HotelsService {
     }
 
     return hotels;
+  }
+
+  /*Store random number **/
+  setData() {
+        this.storage.set(this.key, faker.random.number() );
+   }
+
+   /*Get data which is stored in database **/
+  getData() {
+    this.storage.get(this.key).then((val) => {
+      console.log('Available Room', val);
+    });
+
   }
 
 }
