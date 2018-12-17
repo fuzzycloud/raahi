@@ -8,52 +8,63 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-grid>
-    <ion-item lines="inset">
-    <ion-row >
-      <ion-col size="2">
-<ion-icon name="map"></ion-icon>
+<ion-grid>
+  <ion-item>
+    <ion-row lines="inset">
+      <ion-col>
+        <div>
+          <ion-icon name="map"></ion-icon>
+        </div>
       </ion-col>
-      <ion-col >
-        Destination
+      <ion-col>
+        <div>
+          Destination
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-row lines="inset">
+      <ion-col>
+        <div>
+          <ion-icon name="calendar"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-label>Check-in Date</ion-label>
+          <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-label>Check-out Date</ion-label>
+          <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+        </div>
       </ion-col>
     </ion-row>
   </ion-item>
-    <ion-row lines="inset">
-      <ion-item lines="inset">
-      <ion-col size="2">
-        <ion-icon name="calendar"></ion-icon>
-      </ion-col>
-      <ion-col>
-        Select Date
-      </ion-col>
-    </ion-item>
-    </ion-row>
-    <ion-row>
-      <ion-col lines="inset">
-          <ion-item>
-              <ion-label>Check in Date</ion-label>
-              <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
-            </ion-item>
-      </ion-col>
-      <ion-col lines="inset">
-          <ion-item>
-              <ion-label>Check out Date</ion-label>
-              <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
-            </ion-item>
+
+  <ion-item>
+      <ion-row lines="inset">
+        <ion-col>
+          <div>
+            <ion-icon name="bed"></ion-icon>
+          </div>
         </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-item>
-      <ion-col size="3">
-        <ion-icon name="bed"></ion-icon>
-      </ion-col>
-      <ion-col>
-        Rooms
-      </ion-col>
+        <ion-col>
+          <div>
+              Rooms
+          </div>
+        </ion-col>
+
+      </ion-row>
     </ion-item>
-    </ion-row>
-  </ion-grid>
+
+</ion-grid>
+
 
 </ion-content>
 <ion-footer>

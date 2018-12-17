@@ -5,14 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FlightSearchPage } from './flight-search.page';
-import { OneWayComponent } from './one-way/one-way.component';
-import { RoundTripComponent } from './round-trip/round-trip.component';
+import { PassengersPage } from './passengers.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: FlightSearchPage
+    component: PassengersPage
   }
 ];
 
@@ -23,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [FlightSearchPage, OneWayComponent, RoundTripComponent]
+  declarations: [PassengersPage]
 })
-export class FlightSearchPageModule {}
+export class PassengersPageModule {}
