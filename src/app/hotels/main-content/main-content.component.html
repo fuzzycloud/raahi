@@ -97,14 +97,15 @@
         <ion-row>
           {{hotel.Name}}
         </ion-row>
-        <ion-row style="height: 50px">
+        <ion-row >
           <ion-icon name="star" color="warning"></ion-icon>
           <ion-icon name="star" color="warning"></ion-icon>
         </ion-row>
         <ion-row>
           <ion-col>
-            Good
-            <ion-badge color={{hotel.RandomColor}} slot="end"> 7.2</ion-badge>
+            <!-- Good
+            <ion-badge color={{hotel.RandomColor}} slot="end"> 7.2</ion-badge> -->
+            <ion-label>Available Room : {{hotel.RandomNumber}}</ion-label>
           </ion-col>
           <ion-col>
             Rs. {{hotel.RandomPrice}}
@@ -112,7 +113,7 @@
         </ion-row>
         <ion-row>
           <ion-col>
-        <ion-button color="warning" href="/HotelDetail" expand="full">Hotel Detail</ion-button>
+        <ion-button color="warning" href="/HotelDetail" expand="full" (click)="setData()">Hotel Detail</ion-button>
       </ion-col>
       </ion-row>
       </ion-col>

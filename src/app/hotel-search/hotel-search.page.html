@@ -49,16 +49,18 @@
 
   <ion-item>
       <ion-row lines="inset">
-        <ion-col>
+        <!-- <ion-col>
           <div>
             <ion-icon name="bed"></ion-icon>
           </div>
-        </ion-col>
-        <ion-col>
-          <div>
-              Rooms
-          </div>
-        </ion-col>
+        </ion-col> -->
+        <!-- <ion-label>
+          <h4>Rooms</h4>
+          
+        </ion-label> -->
+        <ion-input [(ngModel)]="inputNumber" placeholder="Enter Rooms"></ion-input>
+<ion-button (click)="save()">save</ion-button>
+<ion-button (click)="load()">load</ion-button>
 
       </ion-row>
     </ion-item>
