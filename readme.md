@@ -18,17 +18,25 @@ https://beta.ionicframework.com/docs/
 **Some Screenshots of Application**
 
 **Home Page**
-![home page](src/assets/img/ss_home (1).png)
+<!-- ![home page](src/assets/img/ss_home (1).png ) -->
+<img src="src/assets/img/ss_home (1).png" width="250">
 
 **Hotels Page**
-![Hotels page](src/assets/img/ss_hotels.png)
+<!-- ![Hotels page](src/assets/img/ss_hotels.png = 250x250) -->
+<img src="src/assets/img/ss_hotels.png" width="250">
 
 **Filter Hotels**
-![Hotel Filter Page](src/assets/img/ss_hotelfilter.png)
+<!-- ![Hotel Filter Page](src/assets/img/ss_hotelfilter.png) -->
+<img src="src/assets/img/ss_hotelfilter.png" width="250">
+
 
 **Sort Hotel**
-![Hotel Sort Page](src/assets/img/ss_hotelsort.png)
+<!-- ![Hotel Sort Page](src/assets/img/ss_hotelsort.png) -->
+<img src="src/assets/img/ss_hotelsort.png" width="250">
+
 
 **Hotel Detail**
-![Hotel Detal Page](src/assets/img/ss_hoteldetail.png)
+<!-- ![Hotel Detal Page](src/assets/img/ss_hoteldetail.png) -->
+<img src="src/assets/img/ss_hoteldetail.png" width="250">
+
 
