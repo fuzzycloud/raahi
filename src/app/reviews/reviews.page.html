@@ -1,9 +1,69 @@
 <ion-header>
-  <ion-toolbar >
-    <ion-title>reviews</ion-title>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <!-- <ion-menu-button></ion-menu-button> -->
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Reviews</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-item lines="inset">
+    <ion-col>
+     
+      <ion-row>
+        <ion-chip color="success">
+          <ion-label>All travellers(100%) </ion-label>
+        </ion-chip>
+      </ion-row>
+     
+      <ion-row>
+        <ion-chip>
+          <ion-label>Couple travellers(40%)</ion-label>
+        </ion-chip>
+      </ion-row>
+     
+      <ion-row>
+        <ion-chip>
+          <ion-label>Family travellers(60%)</ion-label>
+        </ion-chip>
+      </ion-row>
+    
+    </ion-col>
+  </ion-item>
+  
+  
+
+  <ion-item-group>
+      <ion-item-divider color="light">
+        <ion-label>Review Summary</ion-label>
+      </ion-item-divider>
+    
+      <ion-item>
+          <ion-icon name="thumbs-up" color="success"></ion-icon>
+        <ion-label>Pleasant hotel grounds</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="thumbs-up" color="success"></ion-icon>
+        <ion-label>Specious rooms</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="thumbs-up" color="success"></ion-icon>
+        <ion-label>Beach nearby</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="thumbs-down" color="danger"></ion-icon>
+        <ion-label>Hotel could use some updating</ion-label>
+      </ion-item>
+
+      <ion-item>
+          <ion-icon name="thumbs-up" color="success"></ion-icon>
+        <ion-label>
+              <h4>Rooms</h4>
+              <h3>"Great room"</h3>
+            </ion-label>
+          </ion-item>
+    </ion-item-group>
 
 </ion-content>
