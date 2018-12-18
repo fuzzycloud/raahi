@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as moment from 'moment';
 @Component({
   selector: 'app-hotel-search',
   templateUrl: './hotel-search.page.html',
@@ -11,5 +11,7 @@ export class HotelSearchPage implements OnInit {
 
   ngOnInit() {
   }
-
+minStartDate(): string {
+  return moment().format('YYYY-MM-DD');
+}
 }
