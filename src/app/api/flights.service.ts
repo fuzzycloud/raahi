@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as faker from 'faker';
-import { AngularFireFunctions } from 'angularfire2/functions';
+import { AngularFireFunctions } from '@angular/fire/functions';
 import { Observable, from, of, range } from 'rxjs';
 
 
