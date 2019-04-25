@@ -1,7 +1,5 @@
 {
-  "name": "raahi",
-  "integrations": {
-    "cordova": {}
-  },
+  "name": "raahi2",
+  "integrations": {},
   "type": "angular"
 }

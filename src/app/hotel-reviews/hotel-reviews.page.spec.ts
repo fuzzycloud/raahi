@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoundTripComponent } from './round-trip.component';
+import { HotelReviewsPage } from './hotel-reviews.page';
 
-describe('RoundTripComponent', () => {
-  let component: RoundTripComponent;
-  let fixture: ComponentFixture<RoundTripComponent>;
+describe('HotelReviewsPage', () => {
+  let component: HotelReviewsPage;
+  let fixture: ComponentFixture<HotelReviewsPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RoundTripComponent ],
+      declarations: [ HotelReviewsPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoundTripComponent);
+    fixture = TestBed.createComponent(HotelReviewsPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

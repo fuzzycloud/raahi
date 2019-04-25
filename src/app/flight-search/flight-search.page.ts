@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flight-search.page.scss'],
 })
 export class FlightSearchPage implements OnInit {
+  tab = 'one-way';
 
+  show(tab) {
+    this.tab = tab;
+  }
   constructor() { }
 
   ngOnInit() {

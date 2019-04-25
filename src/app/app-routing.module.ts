@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -9,21 +9,16 @@ const routes: Routes = [
   },
   {
     path: 'home',
-
     loadChildren: './home/home.module#HomePageModule'
   },
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
   },
-  {
-    path: 'flights',
-    loadChildren: './flights/flights.module#FlightsPageModule'
-  },
-  {
-    path: 'hotels',
-    loadChildren: './hotels/hotels.module#HotelsPageModule'
-  },
+
+  { path: 'hotel-search', loadChildren: './hotel-search/hotel-search.module#HotelSearchPageModule' },
+  { path: 'flight-search', loadChildren: './flight-search/flight-search.module#FlightSearchPageModule' },
+  { path: 'passengers', loadChildren: './passengers/passengers.module#PassengersPageModule' },
   {
     path: 'about',
     loadChildren: './about/about.module#AboutPageModule'
@@ -33,65 +28,26 @@ const routes: Routes = [
     loadChildren: './press/press.module#PressPageModule'
   },
   {
-    path: 'contacts',
-    loadChildren: './contacts/contacts.module#ContactsPageModule'
-  },
-  {
-    path: 'advertise',
-    loadChildren: './advertise/advertise.module#AdvertisePageModule'
-  },
-  {
-    path: 'hoteliers',
-    loadChildren: './hoteliers/hoteliers.module#HoteliersPageModule'
-  },
-  {
     path: 'privacy',
     loadChildren: './privacy/privacy.module#PrivacyPageModule'
   },
-  {
-    path: 'terms',
-    loadChildren: './terms/terms.module#TermsPageModule'
-  },
-  {
-    path: 'airports',
-    loadChildren: './airports/airports.module#AirportsPageModule'
-  },
-  {
-    path: 'airlines',
-    loadChildren: './airlines/airlines.module#AirlinesPageModule'
-  },
-  {
-    path: 'schedules',
-    loadChildren: './schedules/schedules.module#SchedulesPageModule'
-  },
-  {
-    path: 'HotelFilter',
-    loadChildren: './hotel-filter/hotel-filter.module#HotelFilterPageModule'
-  },
-  {
-    path: 'HotelSort',
-    loadChildren: './hotel-sort/hotel-sort.module#HotelSortPageModule'
-  },
-  {
-    path: 'HotelDetail',
-    loadChildren: './hotel-detail/hotel-detail.module#HotelDetailPageModule'
-  },
-  {
-    path: 'FlightSearch',
-    loadChildren: './flight-search/flight-search.module#FlightSearchPageModule'
-  },  { path: 'HotelSearch', loadChildren: './hotel-search/hotel-search.module#HotelSearchPageModule' },
-  { path: 'FlightSort', loadChildren: './flight-sort/flight-sort.module#FlightSortPageModule' },
-  { path: 'FlightFilter', loadChildren: './flight-filter/flight-filter.module#FlightFilterPageModule' },
-  { path: 'FlightDetail', loadChildren: './flight-detail/flight-detail.module#FlightDetailPageModule' },
-  { path: 'passengers', loadChildren: './passengers/passengers.module#PassengersPageModule' },
-  { path: 'reviews', loadChildren: './reviews/reviews.module#ReviewsPageModule' }
+  { path: 'hotel', loadChildren: './hotel/hotel.module#HotelPageModule' },  { path: 'hotel-sort', loadChildren: './hotel-sort/hotel-sort.module#HotelSortPageModule' },
+  { path: 'hotel-filter', loadChildren: './hotel-filter/hotel-filter.module#HotelFilterPageModule' },
+  { path: 'hotel-detail', loadChildren: './hotel-detail/hotel-detail.module#HotelDetailPageModule' },
+  { path: 'hotel-reviews', loadChildren: './hotel-reviews/hotel-reviews.module#HotelReviewsPageModule' },
+  { path: 'flights', loadChildren: './flights/flights.module#FlightsPageModule' },
+  { path: 'flight-sort', loadChildren: './flight-sort/flight-sort.module#FlightSortPageModule' },
+  { path: 'flight-filter', loadChildren: './flight-filter/flight-filter.module#FlightFilterPageModule' },
+  { path: 'flight-detail', loadChildren: './flight-detail/flight-detail.module#FlightDetailPageModule' },
 
 
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
