@@ -15,20 +15,15 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
-    // {
-    //   title: 'List',
-    //   url: '/list',
-    //   icon: 'list'
-    // },
     {
       title: 'Hotels',
-      url: '/HotelSearch',
+      url: '/hotel-search',
        icon: 'home'
     },
     {
       title: 'Flights',
-      url: '/FlightSearch',
-       icon: 'list'
+      url: '/flight-search',
+       icon: 'md-jet'
     },
     {
 
@@ -46,8 +41,12 @@ export class AppComponent {
       url: '/about',
       icon: 'list'
     }
+    // {
+    //   title: 'List',
+    //   url: '/list',
+    //   icon: 'list'
+    // }
   ];
-
 
   constructor(
     private platform: Platform,

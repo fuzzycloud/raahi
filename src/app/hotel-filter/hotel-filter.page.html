@@ -8,15 +8,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
   <ion-grid>
-    <ion-row style="height: 30px">
-      <ion-tabs tabbar-placement="top" color="success">
-        <ion-tab label="RESET">
-        </ion-tab>
-        <ion-tab label="APPLY">
-        </ion-tab>
+    <ion-row style="height: 45px">
+      <ion-tabs  >
+          <ion-tab-bar slot="top" color="success">
+        <ion-tab-button >
+          <ion-label>RESET</ion-label>
+        </ion-tab-button>
+        <ion-tab-button >
+            <ion-label>APPLY</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
       </ion-tabs>
+     
     </ion-row>
     <ion-row>
       <ion-col>

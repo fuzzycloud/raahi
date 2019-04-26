@@ -1,24 +1,51 @@
 <ion-header>
-    <ion-toolbar color="success">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Flights Search</ion-title>
-    </ion-toolbar>
+  <ion-toolbar color="success">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Flights Search</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-tabs tabbar-placement="top" color="success">
-        <ion-tab label="One Way" >
-           <app-one-way></app-one-way>
-        </ion-tab>
+  <!-- <ion-tabs tabbar-placement="top" color="success">
+      <ion-tab label="One Way" >
+         <app-one-way></app-one-way>
+      </ion-tab>
+     
+      <ion-tab label="Round Trip" >
+          <app-round-trip></app-round-trip>
+      </ion-tab>
+     
+    </ion-tabs> -->
+    <div class="my-tabs">
+     
+      <div class="my-tabs-inner">
+        
+        <ng-container *ngIf="tab === 'one-way'">
+          <app-one-way></app-one-way>
+        </ng-container>
        
-        <ion-tab label="Round Trip" >
-            <app-round-trip></app-round-trip>
-        </ion-tab>
+        <ng-container *ngIf="tab === 'round-trip'">
+          <app-round-trip></app-round-trip>
+        </ng-container>
+     
+      </div>
+
+      <ion-tab-bar tabbar-placement="top" color="success" >
+      
+        <ion-tab-button (click)="show('one-way')">
+          <ion-label>one-way</ion-label>
+        </ion-tab-button>
        
-      </ion-tabs>
+        <ion-tab-button (click)="show('round-trip')">
+          <ion-label>round-trip</ion-label>
+        </ion-tab-button>
+     
+      </ion-tab-bar>
+   
+    </div>
 </ion-content>
 <ion-footer>
-    <ion-button expand="full" color="warning" href="/flights">Search Flights</ion-button>
+  <ion-button expand="full" color="warning"  [routerLink]="['/flights']">Search Flights</ion-button>
 </ion-footer>
