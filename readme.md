@@ -19,24 +19,27 @@ https://ionicframework.com/docs
 
 **Home Page**
 <!-- ![home page](src/assets/img/ss_home (1).png ) -->
-<img src="src/assets/img/ss_home.PNG" width="250">
+<img src="src/assets/img/s_Home.png" width="250">
 
-**Hotels Page**
-<!-- ![Hotels page](src/assets/img/ss_hotels.png = 250x250) -->
-<img src="src/assets/img/ss_hotels.png" width="250">
+**Menu**
+<img src="src/assets/img/s_Menu.png" width="250">
 
-**Filter Hotels**
-<!-- ![Hotel Filter Page](src/assets/img/ss_hotelfilter.png) -->
-<img src="src/assets/img/ss_hotelfilter.png" width="250">
+**Hotel Search Page**
 
+<img src="src/assets/img/s_HotelSearch.png" width="250">
 
-**Sort Hotel**
-<!-- ![Hotel Sort Page](src/assets/img/ss_hotelsort.png) -->
-<img src="src/assets/img/ss_hotelsort.png" width="250">
+**Flight Search**
+
+<img src="src/assets/img/s_FlightSearch.png" width="250">
 
 
-**Hotel Detail**
-<!-- ![Hotel Detal Page](src/assets/img/ss_hoteldetail.png) -->
-<img src="src/assets/img/ss_hoteldetail.png" width="250">
+**Privacy Page**
+
+<img src="src/assets/img/s_Privacy.png" width="250">
+
+
+**About Page**
+
+<img src="src/assets/img/s_About.png" width="250">
 
 
