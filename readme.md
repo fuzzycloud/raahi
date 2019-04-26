@@ -19,7 +19,7 @@ https://ionicframework.com/docs
 
 **Home Page**
 <!-- ![home page](src/assets/img/ss_home (1).png ) -->
-<img src="src/assets/img/ss_home.png" width="250">
+<img src="src/assets/img/ss_home.PNG" width="250">
 
 **Hotels Page**
 <!-- ![Hotels page](src/assets/img/ss_hotels.png = 250x250) -->
