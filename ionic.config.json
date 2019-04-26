@@ -1,5 +1,7 @@
 {
   "name": "raahi2",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
