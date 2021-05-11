@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">raahi2</string>
-    <string name="title_activity_main">raahi2</string>
-    <string name="package_name">com.fuzzycloud.raahi2</string>
-    <string name="fileprovider_authority">com.fuzzycloud.raahi2.fileprovider</string>
-    <string name="custom_url_scheme">com.fuzzycloud.raahi2</string>
-</resources>

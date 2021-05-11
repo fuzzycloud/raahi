@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "cli": {
+    "defaultCollection": "@nrwl/next"
+  },
+  "defaultProject": "web-raahi",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  },
+  "projects": {
+    "web-raahi": {
+      "root": "apps/web-raahi",
+      "sourceRoot": "apps/web-raahi",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/web-raahi",
+            "outputPath": "dist/apps/web-raahi"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "web-raahi:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "web-raahi:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "web-raahi:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/web-raahi"],
+          "options": {
+            "jestConfig": "apps/web-raahi/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/web-raahi/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "web-raahi-e2e": {
+      "root": "apps/web-raahi-e2e",
+      "sourceRoot": "apps/web-raahi-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/web-raahi-e2e/cypress.json",
+            "tsConfig": "apps/web-raahi-e2e/tsconfig.e2e.json",
+            "devServerTarget": "web-raahi:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "web-raahi:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/web-raahi-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    }
+  }
+}
