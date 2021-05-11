@@ -25,6 +25,13 @@
     "web-raahi-e2e": {
       "tags": [],
       "implicitDependencies": ["web-raahi"]
+    },
+    "mobile-raahi": {
+      "tags": []
+    },
+    "mobile-raahi-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mobile-raahi"]
     }
   }
 }
