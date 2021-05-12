@@ -11,7 +11,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
+  },  {
+    path: 'flight-search',
+    loadChildren: () => import('./flight-search/flight-search.module').then( m => m.FlightSearchPageModule)
   },
+
 ];
 
 @NgModule({
