@@ -24,7 +24,9 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "postinstall": "ngcc --properties es2015 browser module main"
+    "postinstall": "ngcc --properties es2015 browser module main",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -81,6 +83,10 @@
     "@nrwl/workspace": "12.2.0",
     "@nxtend/capacitor": "^11.1.1",
     "@nxtend/ionic-angular": "^11.0.2",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "@testing-library/react": "11.2.6",
     "@types/jest": "26.0.8",
     "@types/node": "14.14.33",
@@ -89,6 +95,7 @@
     "@typescript-eslint/eslint-plugin": "4.19.0",
     "@typescript-eslint/parser": "4.19.0",
     "babel-jest": "26.2.2",
+    "babel-loader": "^8.2.2",
     "cypress": "^6.0.1",
     "dotenv": "8.2.0",
     "eslint": "7.22.0",
