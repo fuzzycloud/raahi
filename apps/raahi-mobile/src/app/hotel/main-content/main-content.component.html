@@ -1,0 +1,71 @@
+<ion-row>
+  <ion-searchbar placeholder="Search by Hotel Name"></ion-searchbar>
+</ion-row>
+<ion-row>
+  <ion-item lines="none">
+    <ion-row>
+      <ion-col>
+        <ion-img src="https://images.unsplash.com/photo-1488805990569-3c9e1d76d51c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          Hotel Name
+        </ion-row>
+        <ion-row >
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star" color="warning"></ion-icon>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            
+            <ion-label>Available Room :25</ion-label>
+          </ion-col>
+          <ion-col>
+            Rs.2200
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+        <ion-button color="warning"  [routerLink]="['/hotel-detail']" expand="full" >Hotel Detail</ion-button>
+      </ion-col>
+      </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  </ion-row>
+<!-- old App -->
+<!-- <ion-row>
+  <ion-searchbar placeholder="Search by Hotel Name"></ion-searchbar>
+</ion-row>
+<ion-row *ngFor="let hotel of hotels">
+  <ion-item lines="none">
+    <ion-row>
+      <ion-col>
+        <ion-img src="{{hotel.Image}}"></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          {{hotel.Name}}
+        </ion-row>
+        <ion-row >
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star" color="warning"></ion-icon>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            Good
+            <ion-badge color={{hotel.RandomColor}} slot="end"> 7.2</ion-badge>
+            <ion-label>Available Room : {{hotel.RandomNumber}}</ion-label>
+          </ion-col>
+          <ion-col>
+            Rs. {{hotel.RandomPrice}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+        <ion-button color="warning" href="/HotelDetail" expand="full" (click)="setData()">Hotel Detail</ion-button>
+      </ion-col>
+      </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item> -->

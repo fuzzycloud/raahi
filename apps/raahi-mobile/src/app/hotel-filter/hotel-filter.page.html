@@ -1,9 +1,183 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>hotelFilter</ion-title>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <!-- <ion-menu-button></ion-menu-button> -->
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>HotelFilter</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+  <ion-grid>
+    <ion-row style="height: 45px">
+      <ion-tabs  >
+          <ion-tab-bar slot="top" color="success">
+        <ion-tab-button >
+          <ion-label>RESET</ion-label>
+        </ion-tab-button>
+        <ion-tab-button >
+            <ion-label>APPLY</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+      </ion-tabs>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col>
 
+        <ion-item-group>
+          <ion-item-divider>
+            <ion-label>PRICE</ion-label>
+          </ion-item-divider>
+          <ion-item lines="none">
+            <ion-checkbox></ion-checkbox>
+            <ion-label>Today's Deals</ion-label>
+            <ion-icon name="ios-information-circle" click="presentToastWithOptions()"></ion-icon>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-range min="210" max="2000" color="secondary">
+              <ion-label slot="start">Rs.210</ion-label>
+              <ion-label slot="end">Rs.2000</ion-label>
+            </ion-range>
+          </ion-item>
+        </ion-item-group>
+
+        <ion-item-group>
+            <ion-item-divider>
+              <ion-label>STARS</ion-label>
+            </ion-item-divider>
+            <ion-item lines="none">
+                <ion-segment>
+                    <ion-segment-button >1
+                      <ion-icon name="star"></ion-icon>
+                    </ion-segment-button>
+                    <ion-segment-button >2
+                        <ion-icon name="star"></ion-icon>
+                      </ion-segment-button>
+                       <ion-segment-button >3
+                      <ion-icon name="star"></ion-icon>
+                    </ion-segment-button>
+                    <ion-segment-button >4
+                        <ion-icon name="star"></ion-icon>
+                      </ion-segment-button>
+                      <ion-segment-button >5
+                          <ion-icon name="star"></ion-icon>
+                        </ion-segment-button>
+                  </ion-segment>
+            </ion-item>
+          </ion-item-group>
+
+        <ion-item-group>
+          <ion-item-divider>
+            <ion-label>REVIEW SCORE</ion-label>
+          </ion-item-divider>
+          <ion-item lines="none">
+              <ion-range min="poor" max="excellent" color="secondary">
+                  <ion-label slot="start">Poor</ion-label>
+                  <ion-label slot="end">Excellent</ion-label>
+                </ion-range>
+          </ion-item>
+        </ion-item-group>
+
+        <ion-item-group>
+            <ion-item-divider>
+              <ion-label>SUGGESTED FOR</ion-label>
+            </ion-item-divider>
+            <ion-item lines="none">
+              <ion-checkbox></ion-checkbox>
+              <ion-label>All travellers</ion-label>
+          </ion-item>
+          </ion-item-group>
+
+          <ion-item-group>
+              <ion-item-divider>
+                <ion-label>ACCOMMODATION</ion-label>
+              </ion-item-divider>
+              <ion-item lines="none">
+                <ion-checkbox></ion-checkbox>
+                <ion-label>Hotel</ion-label>
+            </ion-item>
+            <ion-item lines="none">
+                <ion-checkbox></ion-checkbox>
+                <ion-label>Resort</ion-label>
+            </ion-item>
+            </ion-item-group>
+
+            <ion-item-group>
+                <ion-item-divider>
+                  <ion-label>HOTEL AMENITES</ion-label>
+                </ion-item-divider>
+                <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Airconditioning</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Airport Shuttel</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Babysitting/childservices</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Breakfast Buffet</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Bussiness Center</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Highspeed Internet</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Meeting/Banquet Facilities</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Non-smoking Rooms</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Parking</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Pet-friendly</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Restorant</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Safe/vault</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Spa & Wellness Center</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-checkbox></ion-checkbox>
+                  <ion-label>Swimming Pool</ion-label>
+              </ion-item>
+              </ion-item-group>
+  
+              <ion-item-group>
+                  <ion-item-divider>
+                    <ion-label>HOTEL CHAINS&BRANDS</ion-label>
+                  </ion-item-divider>
+                  <ion-item lines="none">
+                    <ion-checkbox></ion-checkbox>
+                    <ion-label>Sarovar Hotels & Resort</ion-label>
+                </ion-item>
+              
+                </ion-item-group>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

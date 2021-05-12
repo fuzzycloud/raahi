@@ -19,18 +19,18 @@ export class AppComponent {
     {
       title: 'Hotels',
       url: '/hotel-search',
-       icon: 'home'
+       icon: 'business'
     },
     {
       title: 'Flights',
       url: '/flight-search',
-       icon: 'md-jet'
+       icon: 'airplane'
     },
     {
 
       title: 'Privacy',
       url: '/privacy',
-      icon: 'lock'
+      icon: 'document-lock'
     },
     {
       title: 'Press',

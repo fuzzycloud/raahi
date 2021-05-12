@@ -1,9 +1,100 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>hotelSearch</ion-title>
+  <ion-toolbar color="success">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+    <ion-title>Hotels Search</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+<!-- <ion-grid>
+  <ion-item>
+    <ion-row lines="inset">
+      <ion-col>
+        <div>
+          <ion-icon name="map"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          Destination
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-row lines="inset">
+      <ion-col>
+        <div>
+          <ion-icon name="calendar"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-label>Check-in Date</ion-label>
+          <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-label>Check-out Date</ion-label>
+          <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <ion-item>
+      <ion-row lines="inset"> -->
+        <!-- <ion-col>
+          <div>
+            <ion-icon name="bed"></ion-icon>
+          </div>
+        </ion-col> -->
+        <!-- <ion-label>
+          <h4>Rooms</h4>
+          
+        </ion-label> -->
+        <!-- <ion-input [(ngModel)]="inputNumber" placeholder="Enter Rooms"></ion-input> -->
+<!-- <ion-button (click)="save()">save</ion-button>
+<ion-button (click)="load()">load</ion-button> -->
+
+      <!-- </ion-row>
+    </ion-item> -->
+
+<!-- </ion-grid> -->
+<ion-item>
+  <ion-label>
+    Destination
+  </ion-label>
+  <ion-icon name="map" slot="end"></ion-icon>
+</ion-item>
+<ion-item>
+  <ion-label>Check-in Date</ion-label>
+  <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+  <ion-icon name="calendar" slot="end"></ion-icon>
+</ion-item>
+<ion-item>
+  <ion-label>Check-out Date</ion-label>
+  <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+  <ion-icon name="calendar" slot="end"></ion-icon>
+</ion-item>
+<ion-item>
+  <ion-label>Select Room</ion-label>
+  <ion-select >
+    <ion-select-option value="one">1 </ion-select-option>
+    <ion-select-option value="two">2</ion-select-option>
+    <ion-select-option value="two">3</ion-select-option>
+    <ion-select-option value="two">4</ion-select-option>
+  </ion-select>
+  <ion-icon name="bed" slot="end"></ion-icon>
+</ion-item>
+
 
 </ion-content>
+<ion-footer>
+  <ion-button expand="full" color="warning"  [routerLink]="['/hotel']">Search Hotels</ion-button>
+</ion-footer>
