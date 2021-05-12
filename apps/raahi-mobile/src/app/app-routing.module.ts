@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'flight-search',
     loadChildren: () => import('./flight-search/flight-search.module').then( m => m.FlightSearchPageModule)
   },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
 
 ];
 
