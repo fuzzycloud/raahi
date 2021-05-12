@@ -39,6 +39,13 @@
     "admin-raahi-e2e": {
       "tags": [],
       "implicitDependencies": ["admin-raahi"]
+    },
+    "raahi-mobile": {
+      "tags": []
+    },
+    "raahi-mobile-e2e": {
+      "tags": [],
+      "implicitDependencies": ["raahi-mobile"]
     }
   }
 }
