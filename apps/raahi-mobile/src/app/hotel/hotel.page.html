@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Hotels</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row color="success" style="height: 45px">
+
+      <ion-tabs>
+
+        <ion-tab-bar slot="top" color="success">
+
+          <ion-tab-button  [routerLink]="['/hotel-sort']">
+            <ion-label>SORT</ion-label>
+            <!-- <ion-icon name="swap"></ion-icon> -->
+            <ion-icon name="swap-vertical-outline"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button  [routerLink]="['/hotel-filter']">
+            <ion-label>FILTER</ion-label>
+            <!-- <ion-icon name="md-funnel"></ion-icon> -->
+            <ion-icon name="filter-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button href="">
+            <ion-label>MAP</ion-label>
+            <ion-icon name="map"></ion-icon>
+          </ion-tab-button>
+
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-row>
+    <ion-row>
+      <app-main-content></app-main-content>
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>

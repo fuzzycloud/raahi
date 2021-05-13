@@ -1,0 +1,569 @@
+{
+  "version": 2,
+  "cli": {
+    "defaultCollection": "@nrwl/next"
+  },
+  "defaultProject": "web-raahi",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/angular:application": {
+      "style": "less",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "style": "less",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "less"
+    }
+  },
+  "projects": {
+    "web-raahi": {
+      "root": "apps/web-raahi",
+      "sourceRoot": "apps/web-raahi",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "root": "apps/web-raahi",
+            "outputPath": "dist/apps/web-raahi"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "web-raahi:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "web-raahi:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "web-raahi:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/web-raahi"
+          ],
+          "options": {
+            "jestConfig": "apps/web-raahi/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/web-raahi/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        }
+      }
+    },
+    "web-raahi-e2e": {
+      "root": "apps/web-raahi-e2e",
+      "sourceRoot": "apps/web-raahi-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/web-raahi-e2e/cypress.json",
+            "tsConfig": "apps/web-raahi-e2e/tsconfig.e2e.json",
+            "devServerTarget": "web-raahi:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "web-raahi:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/web-raahi-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    },
+    "mobile-raahi": {
+      "projectType": "application",
+      "root": "apps/mobile-raahi",
+      "sourceRoot": "apps/mobile-raahi/src",
+      "prefix": "raahi",
+      "targets": {
+        "build": {
+          "executor": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/mobile-raahi",
+            "index": "apps/mobile-raahi/src/index.html",
+            "main": "apps/mobile-raahi/src/main.ts",
+            "polyfills": "apps/mobile-raahi/src/polyfills.ts",
+            "tsConfig": "apps/mobile-raahi/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/mobile-raahi/src/favicon.ico",
+              "apps/mobile-raahi/src/assets"
+            ],
+            "styles": [
+              "apps/mobile-raahi/src/styles.less"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/mobile-raahi/src/environments/environment.ts",
+                  "with": "apps/mobile-raahi/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "mobile-raahi:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "mobile-raahi:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "executor": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "mobile-raahi:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/mobile-raahi/src/**/*.ts",
+              "apps/mobile-raahi/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/mobile-raahi"
+          ],
+          "options": {
+            "jestConfig": "apps/mobile-raahi/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "mobile-raahi-e2e": {
+      "root": "apps/mobile-raahi-e2e",
+      "sourceRoot": "apps/mobile-raahi-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/mobile-raahi-e2e/cypress.json",
+            "tsConfig": "apps/mobile-raahi-e2e/tsconfig.e2e.json",
+            "devServerTarget": "mobile-raahi:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "mobile-raahi:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/mobile-raahi-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    },
+    "admin-raahi": {
+      "projectType": "application",
+      "root": "apps/admin-raahi",
+      "sourceRoot": "apps/admin-raahi/src",
+      "prefix": "raahi",
+      "targets": {
+        "build": {
+          "executor": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/admin-raahi",
+            "index": "apps/admin-raahi/src/index.html",
+            "main": "apps/admin-raahi/src/main.ts",
+            "polyfills": "apps/admin-raahi/src/polyfills.ts",
+            "tsConfig": "apps/admin-raahi/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/admin-raahi/src/favicon.ico",
+              "apps/admin-raahi/src/assets"
+            ],
+            "styles": [
+              "apps/admin-raahi/src/styles.less"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/admin-raahi/src/environments/environment.ts",
+                  "with": "apps/admin-raahi/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "admin-raahi:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "admin-raahi:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "executor": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "admin-raahi:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/admin-raahi/src/**/*.ts",
+              "apps/admin-raahi/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/admin-raahi"
+          ],
+          "options": {
+            "jestConfig": "apps/admin-raahi/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "admin-raahi-e2e": {
+      "root": "apps/admin-raahi-e2e",
+      "sourceRoot": "apps/admin-raahi-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/admin-raahi-e2e/cypress.json",
+            "tsConfig": "apps/admin-raahi-e2e/tsconfig.e2e.json",
+            "devServerTarget": "admin-raahi:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "admin-raahi:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/admin-raahi-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    },
+    "raahi-mobile": {
+      "projectType": "application",
+      "root": "apps/raahi-mobile",
+      "sourceRoot": "apps/raahi-mobile/src",
+      "prefix": "raahi",
+      "targets": {
+        "build": {
+          "executor": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/raahi-mobile",
+            "index": "apps/raahi-mobile/src/index.html",
+            "main": "apps/raahi-mobile/src/main.ts",
+            "polyfills": "apps/raahi-mobile/src/polyfills.ts",
+            "tsConfig": "apps/raahi-mobile/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/raahi-mobile/src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
+            ],
+            "styles": [
+              "apps/raahi-mobile/src/styles.scss",
+              {
+                "input": "apps\\raahi-mobile/src/theme/variables.scss"
+              }
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/raahi-mobile/src/environments/environment.ts",
+                  "with": "apps/raahi-mobile/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "raahi-mobile:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "raahi-mobile:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "executor": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "raahi-mobile:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/raahi-mobile/src/**/*.ts",
+              "apps/raahi-mobile/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/raahi-mobile"
+          ],
+          "options": {
+            "jestConfig": "apps/raahi-mobile/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "cap": {
+          "executor": "@nxtend/capacitor:cap",
+          "options": {
+            "cmd": "--help"
+          }
+        },
+        "add": {
+          "executor": "@nxtend/capacitor:cap",
+          "options": {
+            "cmd": "add",
+            "packageInstall": true
+          },
+          "configurations": {
+            "ios": {
+              "cmd": "add ios"
+            },
+            "android": {
+              "cmd": "add android"
+            }
+          }
+        },
+        "copy": {
+          "executor": "@nxtend/capacitor:cap",
+          "options": {
+            "cmd": "copy",
+            "packageInstall": false
+          },
+          "configurations": {
+            "ios": {
+              "cmd": "copy ios"
+            },
+            "android": {
+              "cmd": "copy android"
+            }
+          }
+        },
+        "open": {
+          "executor": "@nxtend/capacitor:cap",
+          "options": {
+            "cmd": "open",
+            "packageInstall": false
+          },
+          "configurations": {
+            "ios": {
+              "cmd": "open ios"
+            },
+            "android": {
+              "cmd": "open android"
+            }
+          }
+        },
+        "sync": {
+          "executor": "@nxtend/capacitor:cap",
+          "options": {
+            "cmd": "sync",
+            "packageInstall": true
+          },
+          "configurations": {
+            "ios": {
+              "cmd": "sync ios"
+            },
+            "android": {
+              "cmd": "sync android"
+            }
+          }
+        },
+        "update": {
+          "executor": "@nxtend/capacitor:cap",
+          "options": {
+            "cmd": "update",
+            "packageInstall": true
+          },
+          "configurations": {
+            "ios": {
+              "cmd": "update ios"
+            },
+            "android": {
+              "cmd": "update android"
+            }
+          }
+        }
+      }
+    },
+    "raahi-mobile-e2e": {
+      "root": "apps/raahi-mobile-e2e",
+      "sourceRoot": "apps/raahi-mobile-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/raahi-mobile-e2e/cypress.json",
+            "tsConfig": "apps/raahi-mobile-e2e/tsconfig.e2e.json",
+            "devServerTarget": "raahi-mobile:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "raahi-mobile:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/raahi-mobile-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

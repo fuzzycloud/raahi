@@ -1,0 +1,39 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Blank </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true" >
+  <ion-grid  >
+    <ion-row style="margin-top: 30%">
+      <!-- <ion-col > -->
+        <ion-text  style="margin-left: 37%">
+          <h1>Raahi </h1>
+        </ion-text>
+      <!-- </ion-col> -->
+    </ion-row>
+    <ion-row  >
+      <ion-col >
+
+        <ion-text >
+          <h3 style="text-align: center;"> Search all travel deals in one go </h3>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" color="success"  [routerLink]="['/hotel-search']">Hotels
+          <ion-icon  name="home"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" color="success"  [routerLink]="['/flight-search']">Flights
+          <ion-icon name="airplane-outline"></ion-icon>
+
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "raahi-mobile",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "../../dist/apps/raahi-mobile",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
