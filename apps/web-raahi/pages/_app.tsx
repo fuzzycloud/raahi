@@ -3,7 +3,8 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ReactComponent as NxLogo } from '../public/nx-logo-white.svg';
 import './styles.css';
-
+import 'tailwindcss/tailwind.css';
+import '../styles/globals.css';
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -11,10 +12,10 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to web-raahi!</title>
       </Head>
       <div className="app">
-        <header className="flex">
+        {/* <header className="flex">
           <NxLogo width="75" height="50" />
           <h1>Welcome to web-raahi!</h1>
-        </header>
+        </header> */}
         <main>
           <Component {...pageProps} />
         </main>
