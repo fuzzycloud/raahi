@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./application.component.less']
 })
 export class ApplicationComponent implements OnInit {
-
+  isCollapsed = false;
   constructor() { }
-
+  year=(new Date()).getFullYear()
   ngOnInit(): void {
   }
 
