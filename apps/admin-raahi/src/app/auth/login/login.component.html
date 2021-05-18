@@ -1,0 +1,47 @@
+
+  
+ 
+  <div nz-row nzJustify="space-around">
+    <div nz-col nzSpan="12">
+        <nz-card style="margin-top: 5%;">
+            <h1>Login </h1>
+            <form nz-form  class="login-form" style="width: 100%;">
+                <nz-form-item>
+                  <nz-form-control nzErrorTip="Please input your username!">
+                    <nz-input-group nzPrefixIcon="user">
+                      <input type="text" nz-input  placeholder="Username" />
+                    </nz-input-group>
+                  </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                  <nz-form-control nzErrorTip="Please input your Password!">
+                    <nz-input-group nzPrefixIcon="LockOutline">
+                      <input type="password" nz-input placeholder="Password" />
+                    </nz-input-group>
+                  </nz-form-control>
+                </nz-form-item>
+                <div nz-row class="login-form-margin">
+                  <div nz-col [nzSpan]="24">
+                    <label nz-checkbox>
+                      <span>Remember me</span>
+                    </label>
+                  </div>
+                  <div nz-col [nzSpan]="24">
+                    <a class="login-form-forgot">Forgot password ?</a>
+                  </div>
+                </div>
+                <button [routerLink]="['/application']" nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
+                <!-- Or <a> register now! </a> -->
+                <nz-divider nzDashed [nzText]="text">
+                    <ng-template #text><i nz-icon nzType="plus"></i> OR</ng-template>
+                  </nz-divider>
+                <div nz-row [nzGutter]="16">
+                    <div nz-col class="gutter-row" [nzSpan]="12"><div class="inner-box">  <button nzBlock nz-button nzType="default" nzDanger>Google +</button></div></div>
+                    <div nz-col class="gutter-row" [nzSpan]="12"><div class="inner-box">  <button nzBlock nz-button nzType="primary" nzGhost>Facebook</button></div></div>
+                    
+                  </div>
+              </form>
+          </nz-card>
+    </div>
+   
+  </div>
