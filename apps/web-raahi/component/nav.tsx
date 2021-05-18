@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-
+import Link from 'next/link'
 export default function Nav() {
   const [isOpen, setisOpen] = React.useState(false);
 
@@ -63,14 +63,18 @@ export default function Nav() {
                    HOME
                   </a>
                   <a
-                href="#"
+                onClick={() => {
+                  router.push('/HotelSearch');
+                }}
                 className=" page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
                 HOTELS
               </a>
 
                   <a
-                    href="#flights"
+                   onClick={() => {
+                    router.push('/SearchFlight');
+                  }}
                     className="page-scroll text-black hover:bg-green-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                   >
                     FLIGHTS
@@ -84,14 +88,19 @@ export default function Nav() {
                   </a> */}
 
                   <a
-                    href="#price"
+                   onClick={() => {
+                    router.push('/press');
+                  }}
+                    
                     className="text-black hover:bg-green-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                   >
                     PRESS
                   </a>
-
+                 
                   <a
-                    href="#footer"
+                   onClick={() => {
+                    router.push('/about');
+                  }}
                     className="text-black hover:bg-green-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                   >
                    ABOUT
@@ -125,14 +134,18 @@ export default function Nav() {
                HOME
               </a>
               <a
-                href="#FLIGHTS"
+                onClick={() => {
+                  router.push('/HotelSearch');
+                }}
                 className="text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
                HOTELS
               </a>
 
               <a
-                href="#FLIGHTS"
+                onClick={() => {
+                  router.push('/SearchFlight');
+                }}
                 className="text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
                 FLIGHTS
@@ -146,14 +159,18 @@ export default function Nav() {
               </a>
  */}
               <a
-                href="#price"
+                onClick={() => {
+                  router.push('/press');
+                }}
                 className="text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
                PRESS
               </a>
 
               <a
-                href="#footer"
+                onClick={() => {
+                  router.push('/about');
+                }}
                 className="text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
                ABOUT
