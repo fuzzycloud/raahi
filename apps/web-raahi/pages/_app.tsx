@@ -5,6 +5,7 @@ import { ReactComponent as NxLogo } from '../public/nx-logo-white.svg';
 import './styles.css';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
+import Nav from '../component/nav';
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -17,6 +18,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
           <h1>Welcome to web-raahi!</h1>
         </header> */}
         <main>
+        <Nav></Nav>
           <Component {...pageProps} />
         </main>
       </div>
