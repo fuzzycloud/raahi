@@ -5,3 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.gradient{
+  background-image: linear-gradient(to top left, rgb(22, 119, 82), rgb(115, 245, 180));
+}

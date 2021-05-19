@@ -67,129 +67,16 @@ export function Index() {
                   <span>Flights</span>
                 </button>
               </div>
-              {/* <div className="text-center wow fadeInUp" data-wow-delay="1.6s">
-              <img className="img-fluid mx-auto" src="../static/img/hero.png" alt="hero"/>
-            </div> */}
+             
             </div>
           </div>
         </div>
       </section>
-      <div className="container bg-gray-200 ">
-      <div className="grid grid-cols-1 md:grid-cols-6">
-  <div>
-  <div className="relative inline-flex">
-  <svg className="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 232"><path d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z" fill="#648299" fillRule="nonzero"/></svg>
-  <select className="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
-    <option>Choose a color</option>
-    <option>Red</option>
-    <option>Blue</option>
-    <option>Yellow</option>
-    <option>Black</option>
-    <option>Orange</option>
-    <option>Purple</option>
-    <option>Gray</option>
-    <option>White</option>
-  </select>
-</div>
-  </div>
-  <div>
-  <div className="relative inline-flex">
-  <svg className="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 232"><path d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z" fill="#648299" fillRule="nonzero"/></svg>
-  <select className="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
-    <option>Choose a color</option>
-    <option>Red</option>
-    <option>Blue</option>
-    <option>Yellow</option>
-    <option>Black</option>
-    <option>Orange</option>
-    <option>Purple</option>
-    <option>Gray</option>
-    <option>White</option>
-  </select>
-</div>
-  </div>
-</div>
-</div>
-      {/* <div className="container bg-gray-200 w-1/2 grid justify-items-stretch">
-        <div className=" justify-self-center ">
-          <div className="w-full text-center">
-            <h2
-              className="text-4xl font-bold leading-snug text-gray-700 mb-10 wow fadeInUp text-center"
-              data-wow-delay="1s"
-            ></h2>
-            <div
-              className="text-center mb-10 wow fadeInUp"
-              data-wow-delay="1.2s"
-            >
-              <div className="container px-6 py-10 mx-auto">
-                <h3 className="text-gray-800">
-                  1st Choose your delivery option
-                </h3>
-                <div className="flex items-center mt-5 space-x-6">
-                  <button className="flex items-center px-6 py-2 font-medium tracking-wide text-white capitalize bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                    One Way
-                  </button>
-                  <button className="flex items-center px-6 py-2 font-medium tracking-wide text-white capitalize bg-gray-600 rounded-full hover:bg-gray-500 focus:outline-none focus:bg-gray-500">
-                    Round Trip
-                  </button>
-                </div>
-                <div className="grid gap-8 mt-6 sm:grid-cols-1 md:grid-cols-4">
-                  <div className="relative inline-flex">
-                    <svg
-                      className="w-full h-2 absolute top-0 right-0 m-4 pointer-events-none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 412 232"
-                    >
-                      <path
-                        d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
-                        fill="#648299"
-                        fillRule="nonzero"
-                      />
-                    </svg>
-                    <select className="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
-                      <option>Choose a starting point</option>
-                      <option>Rajkot</option>
-                      <option>Bombay</option>
-                      <option>Surat</option>
-                    </select>
-                  </div>
-                  <div className="relative inline-flex">
-                    <svg
-                      className="w-full h-2 absolute top-0 right-0 m-4 pointer-events-none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 412 232"
-                    >
-                      <path
-                        d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
-                        fill="#648299"
-                        fillRule="nonzero"
-                      />
-                    </svg>
-                    <select className="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
-                      <option>Choose a Destination</option>
-                      <option>Rajkot</option>
-                      <option>Bombay</option>
-                      <option>Surat</option>
-                    </select>
-                  </div>
-                  <select
-                className="border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                <option>GTX2020</option>
-                <option>GRE2019</option>
-            </select>
-                  <button className="px-4 py-2 font-medium tracking-wide text-white capitalize bg-blue-600 rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                    Search
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+ 
       <section></section>
       <section>
         <div className="antialiased bg-gray-200 text-gray-900 font-sans ">
-          <h3 className="text-center text-3xl">Popular Hotels</h3>
+          <h3 className="text-center text-3xl text-bold">Popular Hotels</h3>
           <div className="container mx-auto">
             <div className="flex flex-wrap -mx-4">
               <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
