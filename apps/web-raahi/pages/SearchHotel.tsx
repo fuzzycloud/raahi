@@ -4,7 +4,7 @@ import Nav from '../component/nav';
 import { useRouter } from 'next/router';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-export function SearchFlight() {
+export function SearchHotel() {
   /*
    * Replace the elements below with your own.
    *
@@ -39,7 +39,7 @@ export function SearchFlight() {
 
     <div className="flex justify-center">
       <div className="flex">
-        <h1 className="text-gray-600 font-bold md:text-2xl text-xl">Search Flights</h1>
+        <h1 className="text-gray-600 font-bold md:text-2xl text-xl">Search Hotel</h1>
       </div>
     </div>
               <div className="grid justify-items-stretch ">
@@ -47,7 +47,7 @@ export function SearchFlight() {
                   <div className="shadow overflow-hidden sm:rounded-md  w-full bg-white ">
                     <div className="px-4 py-5  sm:p-6 ">
                       
-                      <div className=" pt-3 pb-2 space-x-6">
+                      {/* <div className=" pt-3 pb-2 space-x-6">
                         <label>
                           <input
                             type="radio"
@@ -66,7 +66,7 @@ export function SearchFlight() {
                           />
                           Round Trip
                         </label>
-                      </div>
+                      </div> */}
                       {/* <div className="shadow overflow-hidden sm:rounded-md">
           <div className="px-4 py-5 bg-white sm:p-6"> */}
                       <div className="grid grid-cols-10 gap-6 mt-7">
@@ -75,7 +75,7 @@ export function SearchFlight() {
                             htmlFor="country"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            Journey Date
+                            CheckIn Date
                           </label>
                           <DatePicker
                             className=" border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
@@ -88,7 +88,7 @@ export function SearchFlight() {
                             htmlFor="country"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            Return Date
+                           CheckOut Date
                           </label>
                           <DatePicker
                             className=" border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
@@ -100,7 +100,7 @@ export function SearchFlight() {
                       {/* </div>
                 </div> */}
 
-                      <div className="col-span-12 sm:col-span-12">
+                      {/* <div className="col-span-12 sm:col-span-12">
                         <label
                           htmlFor="country"
                           className="block text-sm font-medium text-gray-700 mt-7" 
@@ -117,9 +117,9 @@ export function SearchFlight() {
                           <option>Canada</option>
                           <option>Mexico</option>
                         </select>
-                      </div>
+                      </div> */}
 
-                      <div className="col-span-12 sm:col-span-12">
+                      {/* <div className="col-span-12 sm:col-span-12">
                         <label
                           htmlFor="country"
                           className="block text-sm font-medium text-gray-700 mt-7"
@@ -136,13 +136,13 @@ export function SearchFlight() {
                           <option>Canada</option>
                           <option>Mexico</option>
                         </select>
-                      </div>
+                      </div> */}
                       <div className="col-span-12 sm:col-span-12">
                         <label
                           htmlFor="country"
                           className="block text-sm font-medium text-gray-700 mt-7"
                         >
-                          Choose Passengers
+                          How Many Members
                         </label>
 
                         <div className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
@@ -277,7 +277,7 @@ export function SearchFlight() {
                             </div>
                           </div>
                         </div>
-                        <button onClick={() => router.replace('/Flights')}className=" mt-10 bg-green-500 hover:bg-green-500 text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded">
+                        <button onClick={() => router.replace('/Hotel')}className=" mt-10 bg-green-500 hover:bg-green-500 text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded">
     Search
 </button>
                       </div>
@@ -296,4 +296,4 @@ export function SearchFlight() {
   );
 }
 
-export default SearchFlight;
+export default SearchHotel;

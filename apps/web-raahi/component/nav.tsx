@@ -9,8 +9,8 @@ export default function Nav() {
   }
   const router = useRouter();
   return (
-    <header id="header-wrap" className="relative">
-      <nav className="bg-green-500 fixed top-0 left-0 w-full z-30 duration-300">
+    <header id="header-wrap" className="relative pb-20">
+      <nav className="bg-green-500 fixed top-0 left-0 w-full z-30 duration-300 ">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -64,7 +64,7 @@ export default function Nav() {
                   </a>
                   <a
                 onClick={() => {
-                  router.push('/HotelSearch');
+                  router.push('/SearchHotel');
                 }}
                 className=" page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
@@ -75,7 +75,7 @@ export default function Nav() {
                    onClick={() => {
                     router.push('/SearchFlight');
                   }}
-                    className="page-scroll text-black hover:bg-green-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+                    className="page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                   >
                     FLIGHTS
                   </a>
@@ -87,7 +87,7 @@ export default function Nav() {
                     Portfolio
                   </a> */}
 
-                  <a
+                  {/* <a
                    onClick={() => {
                     router.push('/press');
                   }}
@@ -95,23 +95,23 @@ export default function Nav() {
                     className="text-black hover:bg-green-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                   >
                     PRESS
-                  </a>
+                  </a> */}
                  
                   <a
                    onClick={() => {
                     router.push('/about');
                   }}
-                    className="text-black hover:bg-green-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+                    className="page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                   >
                    ABOUT
                   </a>
 
-                  <a
+                  {/* <a
                     href="#footer"
                     className="text-black hover:bg-green-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                   >
                    PRIVACY
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
