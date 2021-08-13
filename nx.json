@@ -19,20 +19,6 @@
     }
   },
   "projects": {
-    "web-raahi": {
-      "tags": []
-    },
-    "web-raahi-e2e": {
-      "tags": [],
-      "implicitDependencies": ["web-raahi"]
-    },
-    "mobile-raahi": {
-      "tags": []
-    },
-    "mobile-raahi-e2e": {
-      "tags": [],
-      "implicitDependencies": ["mobile-raahi"]
-    },
     "admin-raahi": {
       "tags": []
     },
@@ -46,6 +32,13 @@
     "raahi-mobile-e2e": {
       "tags": [],
       "implicitDependencies": ["raahi-mobile"]
+    },
+    "web-raahi": {
+      "tags": []
+    },
+    "web-raahi-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web-raahi"]
     }
   }
 }
