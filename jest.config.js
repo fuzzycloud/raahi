@@ -3,6 +3,6 @@ module.exports = {
     '<rootDir>/apps/web-raahi',
     '<rootDir>/apps/mobile-raahi',
     '<rootDir>/apps/admin-raahi',
-    '<rootDir>/apps/raahi-mobile',
+    '<rootDir>/apps/mobile',
   ],
 };

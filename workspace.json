@@ -120,23 +120,23 @@
       "tags": [],
       "implicitDependencies": ["admin-raahi"]
     },
-    "raahi-mobile": {
+    "mobile": {
       "projectType": "application",
-      "root": "apps/raahi-mobile",
-      "sourceRoot": "apps/raahi-mobile/src",
+      "root": "apps/mobile",
+      "sourceRoot": "apps/mobile/src",
       "prefix": "raahi",
       "targets": {
         "build": {
           "executor": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/raahi-mobile",
-            "index": "apps/raahi-mobile/src/index.html",
-            "main": "apps/raahi-mobile/src/main.ts",
-            "polyfills": "apps/raahi-mobile/src/polyfills.ts",
-            "tsConfig": "apps/raahi-mobile/tsconfig.app.json",
+            "outputPath": "dist/apps/mobile",
+            "index": "apps/mobile/src/index.html",
+            "main": "apps/mobile/src/main.ts",
+            "polyfills": "apps/mobile/src/polyfills.ts",
+            "tsConfig": "apps/mobile/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "apps/raahi-mobile/src/assets",
+              "apps/mobile/src/assets",
               {
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
@@ -144,9 +144,9 @@
               }
             ],
             "styles": [
-              "apps/raahi-mobile/src/styles.scss",
+              "apps/mobile/src/styles.scss",
               {
-                "input": "apps/raahi-mobile/src/theme/variables.scss"
+                "input": "apps/mobile/src/theme/variables.scss"
               }
             ],
             "scripts": []
@@ -155,8 +155,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/raahi-mobile/src/environments/environment.ts",
-                  "with": "apps/raahi-mobile/src/environments/environment.prod.ts"
+                  "replace": "apps/mobile/src/environments/environment.ts",
+                  "with": "apps/mobile/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -184,35 +184,35 @@
         "serve": {
           "executor": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "raahi-mobile:build"
+            "browserTarget": "mobile:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "raahi-mobile:build:production"
+              "browserTarget": "mobile:build:production"
             }
           }
         },
         "extract-i18n": {
           "executor": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "raahi-mobile:build"
+            "browserTarget": "mobile:build"
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/raahi-mobile/src/**/*.ts",
-              "apps/raahi-mobile/src/**/*.html"
+              "apps/mobile/src/**/*.ts",
+              "apps/mobile/src/**/*.html"
             ]
           },
           "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/raahi-mobile"],
+          "outputs": ["coverage/apps/mobile"],
           "options": {
-            "jestConfig": "apps/raahi-mobile/jest.config.js",
+            "jestConfig": "apps/mobile/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -300,34 +300,34 @@
       },
       "tags": []
     },
-    "raahi-mobile-e2e": {
-      "root": "apps/raahi-mobile-e2e",
-      "sourceRoot": "apps/raahi-mobile-e2e/src",
+    "mobile-e2e": {
+      "root": "apps/mobile-e2e",
+      "sourceRoot": "apps/mobile-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/raahi-mobile-e2e/cypress.json",
-            "tsConfig": "apps/raahi-mobile-e2e/tsconfig.e2e.json",
-            "devServerTarget": "raahi-mobile:serve"
+            "cypressConfig": "apps/mobile-e2e/cypress.json",
+            "tsConfig": "apps/mobile-e2e/tsconfig.e2e.json",
+            "devServerTarget": "mobile:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "raahi-mobile:serve:production"
+              "devServerTarget": "mobile:serve:production"
             }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/raahi-mobile-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/mobile-e2e/**/*.{js,ts}"]
           },
           "outputs": ["{options.outputFile}"]
         }
       },
       "tags": [],
-      "implicitDependencies": ["raahi-mobile"]
+      "implicitDependencies": ["mobile"]
     },
     "web-raahi": {
       "root": "apps/web-raahi",
