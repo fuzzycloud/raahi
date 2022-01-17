@@ -1,0 +1,8 @@
+.verticalLine {
+  width: 0.1%;
+  height: 10px;
+  background: green;
+  margin-top: 0;
+  position: relative;
+  /* margin-left: 10%; */
+}
