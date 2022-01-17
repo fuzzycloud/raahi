@@ -1,36 +1,5 @@
 {
   "version": 2,
-  "cli": {
-    "defaultCollection": "@nrwl/next"
-  },
-  "defaultProject": "web-raahi",
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "babel": true
-      }
-    },
-    "@nrwl/next": {
-      "application": {
-        "style": "css",
-        "linter": "eslint"
-      }
-    },
-    "@nrwl/angular:application": {
-      "style": "less",
-      "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
-    },
-    "@nrwl/angular:library": {
-      "style": "less",
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {
-      "style": "less"
-    }
-  },
   "projects": {
     "admin-raahi": {
       "projectType": "application",
@@ -51,9 +20,7 @@
               "apps/admin-raahi/src/favicon.ico",
               "apps/admin-raahi/src/assets"
             ],
-            "styles": [
-              "apps/admin-raahi/src/styles.less"
-            ],
+            "styles": ["apps/admin-raahi/src/styles.less"],
             "scripts": []
           },
           "configurations": {
@@ -110,19 +77,19 @@
               "apps/admin-raahi/src/**/*.ts",
               "apps/admin-raahi/src/**/*.html"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/admin-raahi"
-          ],
+          "outputs": ["coverage/apps/admin-raahi"],
           "options": {
             "jestConfig": "apps/admin-raahi/jest.config.js",
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "admin-raahi-e2e": {
       "root": "apps/admin-raahi-e2e",
@@ -145,12 +112,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/admin-raahi-e2e/**/*.{js,ts}"
-            ]
-          }
+            "lintFilePatterns": ["apps/admin-raahi-e2e/**/*.{js,ts}"]
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["admin-raahi"]
     },
     "raahi-mobile": {
       "projectType": "application",
@@ -237,13 +205,12 @@
               "apps/raahi-mobile/src/**/*.ts",
               "apps/raahi-mobile/src/**/*.html"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/raahi-mobile"
-          ],
+          "outputs": ["coverage/apps/raahi-mobile"],
           "options": {
             "jestConfig": "apps/raahi-mobile/jest.config.js",
             "passWithNoTests": true
@@ -330,7 +297,8 @@
             }
           }
         }
-      }
+      },
+      "tags": []
     },
     "raahi-mobile-e2e": {
       "root": "apps/raahi-mobile-e2e",
@@ -353,12 +321,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/raahi-mobile-e2e/**/*.{js,ts}"
-            ]
-          }
+            "lintFilePatterns": ["apps/raahi-mobile-e2e/**/*.{js,ts}"]
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["raahi-mobile"]
     },
     "web-raahi": {
       "root": "apps/web-raahi",
@@ -367,9 +336,7 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "root": "apps/web-raahi",
             "outputPath": "dist/apps/web-raahi"
@@ -399,9 +366,7 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/web-raahi"
-          ],
+          "outputs": ["coverage/apps/web-raahi"],
           "options": {
             "jestConfig": "apps/web-raahi/jest.config.js",
             "passWithNoTests": true
@@ -410,12 +375,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/web-raahi/**/*.{ts,tsx,js,jsx}"
-            ]
-          }
+            "lintFilePatterns": ["apps/web-raahi/**/*.{ts,tsx,js,jsx}"]
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": []
     },
     "web-raahi-e2e": {
       "root": "apps/web-raahi-e2e",
@@ -438,12 +403,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/web-raahi-e2e/**/*.{js,ts}"
-            ]
-          }
+            "lintFilePatterns": ["apps/web-raahi-e2e/**/*.{js,ts}"]
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["web-raahi"]
     }
   }
 }
