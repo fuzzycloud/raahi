@@ -1,34 +1,31 @@
 {
   "version": 2,
   "projects": {
-    "admin-raahi": {
+    "admin": {
       "projectType": "application",
-      "root": "apps/admin-raahi",
-      "sourceRoot": "apps/admin-raahi/src",
+      "root": "apps/admin",
+      "sourceRoot": "apps/admin/src",
       "prefix": "raahi",
       "targets": {
         "build": {
           "executor": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/admin-raahi",
-            "index": "apps/admin-raahi/src/index.html",
-            "main": "apps/admin-raahi/src/main.ts",
-            "polyfills": "apps/admin-raahi/src/polyfills.ts",
-            "tsConfig": "apps/admin-raahi/tsconfig.app.json",
+            "outputPath": "dist/apps/admin",
+            "index": "apps/admin/src/index.html",
+            "main": "apps/admin/src/main.ts",
+            "polyfills": "apps/admin/src/polyfills.ts",
+            "tsConfig": "apps/admin/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/admin-raahi/src/favicon.ico",
-              "apps/admin-raahi/src/assets"
-            ],
-            "styles": ["apps/admin-raahi/src/styles.less"],
+            "assets": ["apps/admin/src/favicon.ico", "apps/admin/src/assets"],
+            "styles": ["apps/admin/src/styles.less"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/admin-raahi/src/environments/environment.ts",
-                  "with": "apps/admin-raahi/src/environments/environment.prod.ts"
+                  "replace": "apps/admin/src/environments/environment.ts",
+                  "with": "apps/admin/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -56,69 +53,69 @@
         "serve": {
           "executor": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "admin-raahi:build"
+            "browserTarget": "admin:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "admin-raahi:build:production"
+              "browserTarget": "admin:build:production"
             }
           }
         },
         "extract-i18n": {
           "executor": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "admin-raahi:build"
+            "browserTarget": "admin:build"
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/admin-raahi/src/**/*.ts",
-              "apps/admin-raahi/src/**/*.html"
+              "apps/admin/src/**/*.ts",
+              "apps/admin/src/**/*.html"
             ]
           },
           "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/admin-raahi"],
+          "outputs": ["coverage/apps/admin"],
           "options": {
-            "jestConfig": "apps/admin-raahi/jest.config.js",
+            "jestConfig": "apps/admin/jest.config.js",
             "passWithNoTests": true
           }
         }
       },
       "tags": []
     },
-    "admin-raahi-e2e": {
-      "root": "apps/admin-raahi-e2e",
-      "sourceRoot": "apps/admin-raahi-e2e/src",
+    "admin-e2e": {
+      "root": "apps/admin-e2e",
+      "sourceRoot": "apps/admin-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/admin-raahi-e2e/cypress.json",
-            "tsConfig": "apps/admin-raahi-e2e/tsconfig.e2e.json",
-            "devServerTarget": "admin-raahi:serve"
+            "cypressConfig": "apps/admin-e2e/cypress.json",
+            "tsConfig": "apps/admin-e2e/tsconfig.e2e.json",
+            "devServerTarget": "admin:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "admin-raahi:serve:production"
+              "devServerTarget": "admin:serve:production"
             }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/admin-raahi-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/admin-e2e/**/*.{js,ts}"]
           },
           "outputs": ["{options.outputFile}"]
         }
       },
       "tags": [],
-      "implicitDependencies": ["admin-raahi"]
+      "implicitDependencies": ["admin"]
     },
     "raahi-mobile": {
       "projectType": "application",
