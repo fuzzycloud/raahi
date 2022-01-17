@@ -18,7 +18,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
           <h1>Welcome to web-raahi!</h1>
         </header> */}
         <main>
-        <Nav></Nav>
+          <Nav></Nav>
           <Component {...pageProps} />
         </main>
       </div>

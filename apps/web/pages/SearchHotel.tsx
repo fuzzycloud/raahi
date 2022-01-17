@@ -25,28 +25,29 @@ export function SearchHotel() {
   };
   return (
     <div>
-      <section  className=" pt-20 pb-10 content_bg">
+      <section className=" pt-20 pb-10 content_bg">
         <div className="container">
           <div className="flex justify-between">
             <div className="w-full text-center">
-            <div className="flex justify-center py-4">
-      {/* <div className="flex bg-purple-200 rounded-full md:p-4 p-2 border-2 border-purple-300">
+              <div className="flex justify-center py-4">
+                {/* <div className="flex bg-purple-200 rounded-full md:p-4 p-2 border-2 border-purple-300">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cursor-fill" viewBox="0 0 16 16">
   <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
 </svg>
       </div> */}
-    </div>
+              </div>
 
-    <div className="flex justify-center">
-      <div className="flex">
-        <h1 className="text-gray-600 font-bold md:text-2xl text-xl">Search Hotel</h1>
-      </div>
-    </div>
+              <div className="flex justify-center">
+                <div className="flex">
+                  <h1 className="text-gray-600 font-bold md:text-2xl text-xl">
+                    Search Hotel
+                  </h1>
+                </div>
+              </div>
               <div className="grid justify-items-stretch ">
                 <div className="justify-self-center ">
                   <div className="shadow overflow-hidden sm:rounded-md  w-full bg-white ">
                     <div className="px-4 py-5  sm:p-6 ">
-                      
                       {/* <div className=" pt-3 pb-2 space-x-6">
                         <label>
                           <input
@@ -88,7 +89,7 @@ export function SearchHotel() {
                             htmlFor="country"
                             className="block text-sm font-medium text-gray-700"
                           >
-                           CheckOut Date
+                            CheckOut Date
                           </label>
                           <DatePicker
                             className=" border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
@@ -277,17 +278,17 @@ export function SearchHotel() {
                             </div>
                           </div>
                         </div>
-                        <button onClick={() => router.replace('/Hotel')}className=" mt-10 bg-green-500 hover:bg-green-500 text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded">
-    Search
-</button>
+                        <button
+                          onClick={() => router.replace('/Hotel')}
+                          className=" mt-10 bg-green-500 hover:bg-green-500 text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded"
+                        >
+                          Search
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-             
-                
             </div>
           </div>
         </div>
