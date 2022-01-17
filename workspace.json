@@ -144,11 +144,13 @@
               }
             ],
             "styles": [
+              "node_modules/ng-zorro-antd-mobile/src/ng-zorro-antd-mobile.min.css",
               "apps/mobile/src/styles.scss",
               {
                 "input": "apps/mobile/src/theme/variables.scss"
               }
             ],
+           
             "scripts": []
           },
           "configurations": {
