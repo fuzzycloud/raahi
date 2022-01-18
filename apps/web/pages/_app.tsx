@@ -4,21 +4,21 @@ import Head from 'next/head';
 import { ReactComponent as NxLogo } from '../public/nx-logo-white.svg';
 import './styles.css';
 import 'tailwindcss/tailwind.css';
-import '../styles/globals.css';
-import Nav from '../component/nav';
+// import '../dist/dist/output.css'
+import Nav from '../components/nav';
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
+    
       <Head>
         <title>Welcome to web-raahi!</title>
+        {/* <link href="../dist/output.css" rel="stylesheet"/> */}
       </Head>
+      
       <div className="app">
-        {/* <header className="flex">
-          <NxLogo width="75" height="50" />
-          <h1>Welcome to web-raahi!</h1>
-        </header> */}
+      
         <main>
-        <Nav></Nav>
+          <Nav></Nav>
           <Component {...pageProps} />
         </main>
       </div>

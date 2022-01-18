@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link'
+import Link from 'next/link';
 export default function Nav() {
   const [isOpen, setisOpen] = React.useState(false);
 
@@ -50,32 +50,33 @@ export default function Nav() {
                   . RAAHI .
                 </h1>
               </div>
-              <div className="hidden sm:block sm:ml-6">
+              <div className="">
+              {/* hidden sm:block sm:ml-6 */}
                 <div className="flex space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-black", Default: "text-gray-300 hover:bg-gray-700 hover:text-black" --> */}
                   <a
                     onClick={() => {
                       router.push('/');
                     }}
-                    className="page-scroll active bg-green-300 text-black px-3 py-2 rounded-md text-sm font-medium"
+                    className="  bg-green-300 text-black px-3 py-2 rounded-md text-sm font-medium"
                     aria-current="page"
                   >
-                   HOME
+                    HOME
                   </a>
                   <a
-                onClick={() => {
-                  router.push('/SearchHotel');
-                }}
-                className=" page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
-              >
-                HOTELS
-              </a>
+                    onClick={() => {
+                      router.push('/SearchHotel');
+                    }}
+                    className="  text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    HOTELS
+                  </a>
 
                   <a
-                   onClick={() => {
-                    router.push('/SearchFlight');
-                  }}
-                    className="page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={() => {
+                      router.push('/SearchFlight');
+                    }}
+                    className=" text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                   >
                     FLIGHTS
                   </a>
@@ -96,14 +97,14 @@ export default function Nav() {
                   >
                     PRESS
                   </a> */}
-                 
+
                   <a
-                   onClick={() => {
-                    router.push('/about');
-                  }}
-                    className="page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={() => {
+                      router.push('/about');
+                    }}
+                    className=" text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                   >
-                   ABOUT
+                    ABOUT
                   </a>
 
                   {/* <a
@@ -123,7 +124,6 @@ export default function Nav() {
           <div className="px-2 pt-2 pb-3 space-y-1">
             {/* <!-- Current: "bg-gray-900 text-black", Default: "text-gray-300 hover:bg-gray-700 hover:text-black" --> */}
             <div className={`lg:flex ${isOpen ? 'block' : 'hidden'} `}>
-            
               <a
                 onClick={() => {
                   router.push('/');
@@ -131,7 +131,7 @@ export default function Nav() {
                 className="bg-green-300 text-black block px-3 py-2 rounded-md text-base font-medium"
                 aria-current="page"
               >
-               HOME
+                HOME
               </a>
               <a
                 onClick={() => {
@@ -139,7 +139,7 @@ export default function Nav() {
                 }}
                 className="text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
-               HOTELS
+                HOTELS
               </a>
 
               <a
@@ -164,7 +164,7 @@ export default function Nav() {
                 }}
                 className="text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
-               PRESS
+                PRESS
               </a>
 
               <a
@@ -173,7 +173,7 @@ export default function Nav() {
                 }}
                 className="text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
               >
-               ABOUT
+                ABOUT
               </a>
 
               <a
