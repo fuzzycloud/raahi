@@ -50,14 +50,15 @@ export default function Nav() {
                   . RAAHI .
                 </h1>
               </div>
-              <div className="hidden sm:block sm:ml-6">
+              <div className="">
+              {/* hidden sm:block sm:ml-6 */}
                 <div className="flex space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-black", Default: "text-gray-300 hover:bg-gray-700 hover:text-black" --> */}
                   <a
                     onClick={() => {
                       router.push('/');
                     }}
-                    className="page-scroll active bg-green-300 text-black px-3 py-2 rounded-md text-sm font-medium"
+                    className="  bg-green-300 text-black px-3 py-2 rounded-md text-sm font-medium"
                     aria-current="page"
                   >
                     HOME
@@ -66,7 +67,7 @@ export default function Nav() {
                     onClick={() => {
                       router.push('/SearchHotel');
                     }}
-                    className=" page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                    className="  text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                   >
                     HOTELS
                   </a>
@@ -75,7 +76,7 @@ export default function Nav() {
                     onClick={() => {
                       router.push('/SearchFlight');
                     }}
-                    className="page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                    className=" text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                   >
                     FLIGHTS
                   </a>
@@ -101,7 +102,7 @@ export default function Nav() {
                     onClick={() => {
                       router.push('/about');
                     }}
-                    className="page-scroll text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                    className=" text-black hover:bg-green-300 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                   >
                     ABOUT
                   </a>

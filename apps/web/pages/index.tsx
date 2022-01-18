@@ -12,6 +12,7 @@ export function Index() {
    */
   const router = useRouter();
   return (
+  
     <div>
       <section id="hero-area" className=" pt-48 pb-10 content_bg">
         <div className="container">
@@ -19,7 +20,7 @@ export function Index() {
           <div className="flex justify-between">
             <div className="w-full text-center">
               <h2
-                className="text-4xl font-bold leading-snug text-gray-700 mb-10 wow fadeInUp text-center"
+                className=" text-4xl font-bold leading-snug text-gray-700 mb-10 wow fadeInUp text-center"
                 data-wow-delay="1s"
               >
                 SEARCH ALL TRAVELS DEALS IN ONE GO
