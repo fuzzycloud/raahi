@@ -3,9 +3,9 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ReactComponent as NxLogo } from '../public/nx-logo-white.svg';
 import './styles.css';
-import 'tailwindcss/tailwind.css';
+
 import '../styles/globals.css';
-import Nav from '../component/nav';
+import Nav from '../components/nav';
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>

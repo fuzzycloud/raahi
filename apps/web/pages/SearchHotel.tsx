@@ -1,6 +1,6 @@
 import { url } from 'node:inspector';
 import React, { useState } from 'react';
-import Nav from '../component/nav';
+import Nav from '../components/nav';
 import { useRouter } from 'next/router';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';

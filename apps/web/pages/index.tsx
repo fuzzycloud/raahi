@@ -1,6 +1,6 @@
 import { url } from 'node:inspector';
 import React from 'react';
-import Nav from '../component/nav';
+import Nav from '../components/nav';
 import { useRouter } from 'next/router';
 import styles from './index.module.css';
 
