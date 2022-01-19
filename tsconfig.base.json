@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@raahi/common-mobile-ui": ["libs/common-mobile-ui/src/index.ts"],
+      "@raahi/common-web-ui": ["libs/common-web-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
