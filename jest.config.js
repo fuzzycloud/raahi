@@ -5,5 +5,7 @@ module.exports = {
     '<rootDir>/apps/admin-raahi',
     '<rootDir>/apps/mobile',
     '<rootDir>/apps/server',
+    '<rootDir>/libs/common-mobile-ui',
+    '<rootDir>/libs/common-web-ui',
   ],
 };

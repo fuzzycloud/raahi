@@ -117,6 +117,55 @@
       "tags": [],
       "implicitDependencies": ["admin"]
     },
+    "common-mobile-ui": {
+      "projectType": "library",
+      "root": "libs/common-mobile-ui",
+      "sourceRoot": "libs/common-mobile-ui/src",
+      "prefix": "raahi",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/common-mobile-ui"],
+          "options": {
+            "jestConfig": "libs/common-mobile-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/common-mobile-ui/src/**/*.ts",
+              "libs/common-mobile-ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "common-web-ui": {
+      "root": "libs/common-web-ui",
+      "sourceRoot": "libs/common-web-ui/src",
+      "projectType": "library",
+      "tags": [],
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/common-web-ui/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/common-web-ui"],
+          "options": {
+            "jestConfig": "libs/common-web-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "mobile": {
       "projectType": "application",
       "root": "apps/mobile",
