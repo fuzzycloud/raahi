@@ -18,7 +18,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <div className="app">
       
         <main>
-          <Nav></Nav>
+          {/* <Nav></Nav> */}
           <Component {...pageProps} />
         </main>
       </div>
