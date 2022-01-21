@@ -7,9 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { HotelPageRoutingModule } from './hotel-routing.module';
 
 import { HotelPage } from './hotel.page';
-import { MainContentComponent } from '../hotel/main-content/main-content.component';
+
+import { HotelListModule} from '@raahi/common-mobile-ui';
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, HotelPageRoutingModule],
-  declarations: [HotelPage, MainContentComponent],
+  imports: [CommonModule, FormsModule, IonicModule, HotelPageRoutingModule,HotelListModule],
+  declarations: [HotelPage, ],
 })
 export class HotelPageModule {}

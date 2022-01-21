@@ -13,8 +13,10 @@ export function Index() {
   const router = useRouter();
   return (
   
-    <div>
-      <section id="hero-area" className=" pt-48 pb-10 content_bg">
+    <div className=" content_bg">
+       <Nav></Nav>
+      <section id="hero-area" className=" pt-48 pb-10 ">
+       
         <div className="container">
           {/* <a href="/searchFlight">search</a> */}
           <div className="flex justify-between">

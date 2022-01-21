@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'raahi-hotel',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hotel.page.css'],
 })
 export class HotelPage implements OnInit {
-  constructor() {}
+  constructor(private router : Router){}
+  onHotelDetail(){
+    this.router.navigate(['/hotel-detail']);
+  }
 
   ngOnInit() {}
 }
