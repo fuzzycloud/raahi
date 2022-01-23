@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>Offers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div  *ngFor="let o of offer">
+    <ion-card >
+      <img
+        src={{o.image}}
+      />
+      <ion-card-header>
+        <ion-card-subtitle>{{o.validity}}</ion-card-subtitle>
+        <ion-card-title>{{o.title}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
+  </ion-list>
+</ion-content>
