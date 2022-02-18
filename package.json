@@ -54,7 +54,7 @@
     "core-js": "^3.6.5",
     "document-register-element": "1.13.1",
     "ionicons": "^5.5.1",
-    "next": "12.0.9",
+    "next": "12.1.0",
     "ng-zorro-antd-mobile": "^6.0.0",
     "react": "17.0.2",
     "react-datepicker": "^3.8.0",
