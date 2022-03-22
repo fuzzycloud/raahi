@@ -272,8 +272,7 @@
         "add": {
           "executor": "@nxtend/capacitor:cap",
           "options": {
-            "cmd": "add",
-            "packageInstall": true
+            "cmd": "add"
           },
           "configurations": {
             "ios": {
@@ -287,8 +286,7 @@
         "copy": {
           "executor": "@nxtend/capacitor:cap",
           "options": {
-            "cmd": "copy",
-            "packageInstall": false
+            "cmd": "copy"
           },
           "configurations": {
             "ios": {
@@ -302,8 +300,7 @@
         "open": {
           "executor": "@nxtend/capacitor:cap",
           "options": {
-            "cmd": "open",
-            "packageInstall": false
+            "cmd": "open"
           },
           "configurations": {
             "ios": {
@@ -317,8 +314,7 @@
         "sync": {
           "executor": "@nxtend/capacitor:cap",
           "options": {
-            "cmd": "sync",
-            "packageInstall": true
+            "cmd": "sync"
           },
           "configurations": {
             "ios": {
@@ -332,8 +328,7 @@
         "update": {
           "executor": "@nxtend/capacitor:cap",
           "options": {
-            "cmd": "update",
-            "packageInstall": true
+            "cmd": "update"
           },
           "configurations": {
             "ios": {
@@ -341,6 +336,20 @@
             },
             "android": {
               "cmd": "update android"
+            }
+          }
+        },
+        "run": {
+          "executor": "@nxtend/capacitor:cap",
+          "options": {
+            "cmd": "run"
+          },
+          "configurations": {
+            "ios": {
+              "cmd": "run ios"
+            },
+            "android": {
+              "cmd": "run android"
             }
           }
         }
