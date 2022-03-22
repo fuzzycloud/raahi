@@ -9,14 +9,12 @@ import Nav from '../components/nav';
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    
       <Head>
         <title>Welcome to web-raahi!</title>
         {/* <link href="../dist/output.css" rel="stylesheet"/> */}
       </Head>
-      
+
       <div className="app">
-      
         <main>
           <Nav></Nav>
           <Component {...pageProps} />
