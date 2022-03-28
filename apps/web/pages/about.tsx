@@ -3,7 +3,7 @@ export default function About() {
     <div>
       <div className="w-full grid-rows-1  ">
         <h1 className="text-5xl text-bold underline text-green-500 text-center mt-10">
-          ABOUT US
+          {/* ABOUT US */}
         </h1>
       </div>
       <div className="p-12">

@@ -25,10 +25,19 @@ export function SearchHotel() {
   };
   return (
     <div>
-      <section className=" pt-20 pb-10 content_bg">
+            <section>
+        <div className="hero bg-green-100 min-h-screen bg-base-200">
+          <div className="hero-content flex-col lg:flex-row-reverse">
+            <img
+              style={{ width: 'auto', height: '500px', position: 'relative' }}
+              className="h-348"
+              src="hero-img.png"
+            />
+            <div>
+            <section className="">
         <div className="container">
           <div className="flex justify-between">
-            <div className="w-full text-center">
+            <div className="w-full text-start">
               <div className="flex justify-center py-4">
                 {/* <div className="flex bg-purple-200 rounded-full md:p-4 p-2 border-2 border-purple-300">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cursor-fill" viewBox="0 0 16 16">
@@ -40,7 +49,7 @@ export function SearchHotel() {
               <div className="flex justify-center">
                 <div className="flex">
                   <h1 className="text-gray-600 font-bold md:text-2xl text-xl">
-                    Search Hotel
+                    {/* Search Hotel */}
                   </h1>
                 </div>
               </div>
@@ -120,12 +129,12 @@ export function SearchHotel() {
                         </select>
                       </div> */}
 
-                      {/* <div className="col-span-12 sm:col-span-12">
+                      <div className="col-span-12 sm:col-span-12">
                         <label
                           htmlFor="country"
                           className="block text-sm font-medium text-gray-700 mt-7"
                         >
-                          Choose Destination Point
+                          Choose City
                         </label>
                         <select
                           id="country"
@@ -137,7 +146,7 @@ export function SearchHotel() {
                           <option>Canada</option>
                           <option>Mexico</option>
                         </select>
-                      </div> */}
+                      </div>
                       <div className="col-span-12 sm:col-span-12">
                         <label
                           htmlFor="country"
@@ -293,6 +302,11 @@ export function SearchHotel() {
           </div>
         </div>
       </section>
+            </div>
+          </div>
+        </div>
+      </section>
+     
     </div>
   );
 }
