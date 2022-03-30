@@ -34,3 +34,35 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+# stages:
+#   - 'init'
+#   - 'format'
+#   - 'build'
+
+# initial:
+#   stage: init
+#   image: node:16-alpine
+#   script:
+#     - npm i
+#   cache:
+#     key: ${CI_PROJECT_ID}
+#     paths:
+#       - node_modules/
+#   only:
+#     refs:
+#       - merge_requests
+
+# format_all:
+#   stage: format
+#   image: node:16-alpine
+#   before_script:
+#     - npm i
+#   script:
+#     - npm run format:check
+#   cache:
+#     key: ${CI_PROJECT_ID}
+#     paths:
+#       - node_modules/
+#   only:
+#     refs:
+#       - merge_requests

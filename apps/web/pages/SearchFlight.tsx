@@ -25,22 +25,27 @@ export function SearchFlight() {
   };
   return (
     <div>
-      <section className=" pt-20 pb-10 content_bg">
+          <section>
+        <div className="hero bg-green-100 min-h-screen bg-base-200">
+          <div className="hero-content flex-col lg:flex-row-reverse">
+            <img
+              style={{ width: 'auto', height: '500px', position: 'relative' }}
+              className="h-348"
+              src="hero-img.png"
+            />
+            <div>
+            <section className="  ">
         <div className="container">
           <div className="flex justify-between">
-            <div className="w-full text-center">
+            <div className="w-full text-start">
               <div className="flex justify-center py-4">
-                {/* <div className="flex bg-purple-200 rounded-full md:p-4 p-2 border-2 border-purple-300">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cursor-fill" viewBox="0 0 16 16">
-  <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-</svg>
-      </div> */}
+              
               </div>
 
               <div className="flex justify-center">
                 <div className="flex">
                   <h1 className="text-gray-600 font-bold md:text-2xl text-xl">
-                    Search Flights
+                    {/* Search Flights */}
                   </h1>
                 </div>
               </div>
@@ -293,6 +298,11 @@ export function SearchFlight() {
           </div>
         </div>
       </section>
+            </div>
+          </div>
+        </div>
+      </section>
+  
     </div>
   );
 }
