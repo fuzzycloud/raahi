@@ -215,8 +215,7 @@ export default function Nav() {
       <li className={router.pathname == "/" ? "active bg-green-600 rounded font-bold text-xl text-white" : "font-bold text-xl text-white"}><Link  href="/">Home</Link></li>
       <li className={router.pathname == "/SearchHotel" ? "active bg-green-600 rounded font-bold text-xl text-white" : "font-bold text-xl text-white"}><Link  href="/SearchHotel">Hotels</Link></li>
       <li className={router.pathname == "/SearchFlight" ? "active bg-green-600 rounded font-bold text-xl text-white" : "font-bold text-xl text-white"}><Link  href="/SearchFlight">Flight</Link></li>
-      <li><a  className='font-bold text-xl text-white'>Portfolio</a></li>
-      <li><a  className='font-bold text-xl text-white'>Press</a></li>
+     
       <li className={router.pathname == "/about" ? "active bg-green-600 rounded font-bold text-xl text-white" : "font-bold text-xl text-white"}><Link  href="/about">About</Link></li>
     </ul>
   </div>
