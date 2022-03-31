@@ -1,10 +1,10 @@
-import { url } from 'node:inspector';
+
 import React from 'react';
 import Nav from '../components/nav';
 import { useRouter } from 'next/router';
 import styles from './index.module.css';
 
-export function Index() {
+export default function Index() {
   /*
    * Replace the elements below with your own.
    *
@@ -12,7 +12,7 @@ export function Index() {
    */
   const router = useRouter();
   return (
-    <div className=" content_bg">
+    <div className=" ">
       {/* <Nav></Nav> */}
       <section>
         <div className="hero bg-green-100 min-h-screen bg-base-200">
@@ -334,11 +334,11 @@ export function Index() {
                   <div className="p-4 border-t border-b text-xs text-gray-700">
                     <span className="flex items-center mb-1">
                       <i className="far fa-clock fa-fw mr-2 text-gray-900"></i>{' '}
-                      3 Tage
+                      
                     </span>
                     <span className="flex items-center">
                       <i className="far fa-address-card fa-fw text-gray-900 mr-2"></i>{' '}
-                      Ermäßigung mit Karte
+                      <a href='#'>Trip.com</a>
                     </span>
                   </div>
                   <div className="p-4 flex items-center text-sm text-gray-600">
@@ -413,11 +413,11 @@ export function Index() {
                   <div className="p-4 border-t border-b text-xs text-gray-700">
                     <span className="flex items-center mb-1">
                       <i className="far fa-clock fa-fw mr-2 text-gray-900"></i>{' '}
-                      3 Tage
+                      
                     </span>
                     <span className="flex items-center">
                       <i className="far fa-address-card fa-fw text-gray-900 mr-2"></i>{' '}
-                      Ermäßigung mit Karte
+                      <a>Trip.com</a>
                     </span>
                   </div>
                   <div className="p-4 flex items-center text-sm text-gray-600">
@@ -492,11 +492,11 @@ export function Index() {
                   <div className="p-4 border-t border-b text-xs text-gray-700">
                     <span className="flex items-center mb-1">
                       <i className="far fa-clock fa-fw mr-2 text-gray-900"></i>{' '}
-                      3 Tage
+                      
                     </span>
                     <span className="flex items-center">
                       <i className="far fa-address-card fa-fw text-gray-900 mr-2"></i>{' '}
-                      Ermäßigung mit Karte
+                      <a>Trip.com</a>
                     </span>
                   </div>
                   <div className="p-4 flex items-center text-sm text-gray-600">
@@ -571,11 +571,11 @@ export function Index() {
                   <div className="p-4 border-t border-b text-xs text-gray-700">
                     <span className="flex items-center mb-1">
                       <i className="far fa-clock fa-fw mr-2 text-gray-900"></i>{' '}
-                      3 Tage
+                      
                     </span>
                     <span className="flex items-center">
                       <i className="far fa-address-card fa-fw text-gray-900 mr-2"></i>{' '}
-                      Ermäßigung mit Karte
+                      <a>Trip.com</a>
                     </span>
                   </div>
                   <div className="p-4 flex items-center text-sm text-gray-600">
@@ -632,4 +632,4 @@ export function Index() {
   );
 }
 
-export default Index;
+
