@@ -4,6 +4,7 @@ import Nav from '../components/nav';
 import { useRouter } from 'next/router';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { HotelList } from '@raahi/common-web-ui';
 export function SearchHotel() {
   /*
    * Replace the elements below with your own.
@@ -302,11 +303,16 @@ export function SearchHotel() {
           </div>
         </div>
       </section>
+     
             </div>
           </div>
         </div>
       </section>
-     
+      <section>
+      <h3 className="text-center text-3xl text-bold p-8  text-green-800 font-bold uppercase">Popular Hotels</h3>
+      <HotelList></HotelList>
+      
+      </section>
     </div>
   );
 }

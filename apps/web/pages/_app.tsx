@@ -18,13 +18,18 @@ function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <div className="app">
-        <main>
+        {/* <main>
           <Nav></Nav>
           <Component {...pageProps} />
           
-       
+       <Footer></Footer>
           
-        </main>
+        </main> */}
+        <div className="flex flex-col h-screen justify-between">
+  <header className=""> <Nav></Nav></header>
+  <main className="mb-auto "><Component {...pageProps} /></main>
+  <footer className=""> <Footer></Footer></footer>
+</div>
         
       </div>
       
