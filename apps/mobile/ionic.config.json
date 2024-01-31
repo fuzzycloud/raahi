@@ -1,7 +1,0 @@
-{
-  "name": "raahi-mobile",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
