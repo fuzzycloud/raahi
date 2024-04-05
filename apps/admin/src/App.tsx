@@ -1,11 +1,10 @@
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 function App() {
-
-  return (
-    <>
-      <Button variant="contained">Hello admin</Button>
-    </>
-  )
+	return (
+		<>
+			<Button variant="contained">Hello admin</Button>
+		</>
+	);
 }
 
-export default App
+export default App;
