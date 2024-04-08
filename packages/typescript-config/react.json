@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Vite React App TS + SWC",
+    "extends": "./base.json",
+    "compilerOptions": {
+      "useDefineForClassFields": true,
+      "moduleResolution": "bundler",
+      "allowImportingTsExtensions": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+    },
+  }
